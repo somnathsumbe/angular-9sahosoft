@@ -7,6 +7,9 @@ import { Hello } from './hello';
 import { StudentComponent } from './student/student.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { GenderselectionComponent } from './genderselection/genderselection.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { Component1Component } from './component1/component1.component';
+import { Component2Component } from './component2/component2.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { GenderselectionComponent } from './genderselection/genderselection.comp
     EmpComponent,
     StudentComponent,
     EmployeeComponent,
-    GenderselectionComponent
+    GenderselectionComponent,
+    DirectiveComponent,
+    Component1Component,
+    Component2Component
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,312 @@
+<div class="row  col-md-12 mt-4">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header bg-success text-white">*ngIf </div>
+      <div class="card-body">
+
+        <input type="radio" name="gander" (click)="onchange(true)" checked> Male
+        <input type="radio" name="gander" (click)="onchange(false)"> Famale
+
+        <!-- Normal Used  -->
+
+        <!-- <div *ngIf="isValid">
+          I am Male
+        </div>
+
+        <div *ngIf="!isValid">
+          I am Famale
+        </div> -->
+
+        <!-- Copile  code    -->
+        <ng-template [ngIf]="isValid">
+          <div>
+            I am Male
+          </div>
+        </ng-template>
+
+        <ng-template [ngIf]="!isValid">
+          <div>
+            I am Famale
+          </div>
+        </ng-template>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header bg-success text-white">Gander Selection Example</div>
+      <div class="card-body">
+        <input type="radio" name="gander1" (click)="selectGander('male')" checked> Male
+        <input type="radio" name="gander1" (click)="selectGander('famale')"> Famale
+        <input type="radio" name="gander1" (click)="selectGander('other')"> Other
+
+        <div *ngIf="isGander=='male'">
+          I am Male
+        </div>
+
+        <div *ngIf="isGander=='famale'">
+          I am Famale
+        </div>
+
+        <div *ngIf="isGander=='other'">
+          I am Other
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header bg-success text-white">Positive Nigative number</div>
+      <div class="card-body">
+
+        <div class="radio">
+          <label>
+            <input type="number" #internumber>
+            <button type="button" class="btn btn-sm btn-info"
+              (click)="positiveNigativeCheck(internumber.value)">button</button>
+          </label>
+        </div>
+
+ <P>{{positiveNigativenumber}}</P>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row  col-md-12 mt-4">
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header bg-info text-white">*ngIf and Else Statement</div>
+      <div class="card-body">
+        <input type="radio" name="gander2" (click)="onchange1(true)" checked> Male
+        <input type="radio" name="gander2" (click)="onchange1(false)"> Famale
+
+        <!-- <div *ngIf="isValid1 else elseblock">
+          I am Male
+        </div>
+
+        <ng-template #elseblock>
+          <div>
+            I am Famale
+          </div>
+        </ng-template> -->
+
+
+        <ng-template [ngIf]="isValid1" [ngIfElse]="elseblock">
+          <div> I am Male</div>
+        </ng-template>
+
+        <ng-template #elseblock>
+          <div>
+            I am Famale
+          </div>
+        </ng-template>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header bg-info text-white">Example 1</div>
+      <div class="card-body">
+        <label for="">Enter Your Age:</label>
+        <input type="Text" name="voterselect" #age (keyup)="0">
+
+
+        <div *ngIf=" age.value > 17 else elseblock1">
+          Eligible for Vote
+        </div>
+
+        <ng-template #elseblock1>
+          <div>
+            Not Eligible for Vote
+          </div>
+        </ng-template>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="row  col-md-12 mt-4">
+
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header bg-warning ">*ngIf and Else then block</div>
+      <div class="card-body">
+        <input type="radio" name="gander3" (click)="onthenblock(true)" checked> Male
+        <input type="radio" name="gander3" (click)="onthenblock(false)"> Famale
+
+        <!-- Normal  Way -->
+
+        <!-- <div *ngIf="Thenblockvalue then thenblock else elseblock2">
+
+        </div>
+
+        <ng-template #thenblock>
+          <div>
+            I am Male
+          </div>
+        </ng-template>
+
+        <ng-template #elseblock2>
+          <div>
+            I am Famale
+          </div>
+        </ng-template> -->
+
+
+        <!-- compile code -->
+        <ng-template [ngIf]="Thenblockvalue" [ngIfThen]="thenblock" [ngIfElse]="elseblock2">
+
+        </ng-template>
+
+        <ng-template #thenblock>
+          <div>
+            I am Male
+          </div>
+        </ng-template>
+
+        <ng-template #elseblock2>
+          <div>
+            I am Famale
+          </div>
+        </ng-template>
+
+      </div>
+
+      <div class="card-footer">Tips :code Organise / well Maintain </div>
+    </div>
+  </div>
+
+  <!-- <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header bg-success text-white">Example 1</div>
+      <div class="card-body">
+        <label for="">Enter Your Age:</label>
+        <input type="Text" name="voterselect" #age (keyup)="0">
+
+
+        <div *ngIf=" age.value > 17 else elseblock1">
+          Eligible for Vote
+        </div>
+
+        <ng-template #elseblock1>
+          <div>
+            Not Eligible for Vote
+          </div>
+        </ng-template>
+
+      </div>
+    </div>
+  </div> -->
+
+</div>
+
+
+<div class="row  col-md-12 mt-4">
+
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header bg-success ">Component Select Example</div>
+      <div class="card-body">
+
+        <div class="col-md-4 text-center mb-5  bg-warning pt-3 mb-3">
+          <h3 class="text-white">Login</h3>
+          <input type="radio" name="componentSelect" (click)="compoChange(true)" checked> Student
+          <input type="radio" name="componentSelect" (click)="compoChange(false)"> Employee
+        </div>
+
+        <ng-template class="card mt-3" [ngIf]="selectComponent">
+          <div class="card-header bg-info ">Student Component 1</div>
+          <div class="card-body">
+            <h2> Student Small Table</h2>
+            <p>The .table-sm class makes the table smaller by cutting cell padding in half:</p>
+            <table class="table table-bordered table-sm">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </ng-template>
+
+
+        <ng-template class="card mt-3" [ngIf]="!selectComponent">
+          <div class="card-header bg-danger text-white"> Emplyee Component 2</div>
+          <div class="card-body">
+
+            <h2>Emplyee Dark Table</h2>
+            <p>The .table-hover class adds a hover effect (grey background color) on table rows:</p>
+            <table class="table table-dark table-hover">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </ng-template>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>
