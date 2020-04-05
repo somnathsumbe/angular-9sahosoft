@@ -1,0 +1,82 @@
+ <div class="jumbotron text-center">
+   <div *ngIf="msg |async as msg else lodaing">
+     <h1>{{msg}}</h1>
+   </div>
+   <ng-template #lodaing>
+     <div class="spinner-border text-muted"></div>
+     <div class="spinner-border text-muted"></div>
+     <div class="spinner-border text-muted"></div>
+   </ng-template>
+
+
+   <p>Resize this responsive page to see the effect!</p>
+ </div>
+
+ <div class="container">
+   <div class="row">
+     <div class="col-sm-4">
+       <h3 *ngIf="Heading |async as Heading ">{{Heading[0]}}</h3>
+       <p *ngIf="submsg |async as submsg else lodaing">{{submsg}}</p>
+     </div>
+     <div class="col-sm-4">
+       <h3 *ngIf="Heading |async as Heading ">{{Heading[1]}}</h3>
+       <p *ngIf="submsg |async as submsg else lodaing">{{submsg}}</p>
+     </div>
+     <div class="col-sm-4">
+       <h3 *ngIf="Heading |async as Heading">{{Heading[2]}}</h3>
+       <p *ngIf="submsg |async as submsg else lodaing">{{submsg}}</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+       <table class="table table-bordered">
+         <thead>
+           <tr>
+             <th>Index</th>
+             <th>{{"First Name" | titlecase}}</th>
+             <th>{{"Last Name" | titlecase}}</th>
+             <th>{{"Age" | titlecase}}</th>
+           </tr>
+         </thead>
+         <tbody>
+
+           <tr *ngFor="let tdata of tdata  | async as tdata1 ; let i=index; let odd=odd" >
+             <td>{{i+1}}</td>
+             <td>{{tdata.fname}}</td>
+             <td>{{tdata.lname}}</td>
+             <td>{{tdata.age}}</td>
+           </tr>
+         </tbody>
+       </table>
+     </div>
+   </div>
+ </div>
+
+
+
+ <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>{{"Name" | titlecase}}</th>
+            <th>{{"Age" | titlecase}}</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let Allemp1 of allEmp  | async as tdata1 " >
+            {{Allemp1}}
+            <!-- <td>{{Allemp1.name}}</td>
+            <td>{{Allemp1.age}}</td> -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -11,10 +11,17 @@ export class DirectiveComponent implements OnInit {
   isGander = "male";
   isValid1 = true;
   Thenblockvalue = true;
-  selectComponent = true;
   positiveNigativenumber: string;
 
   constructor() {}
+
+  Empdata:any = [
+    { fname: "Muktaji", lname: "Sumbe", age: 68 },
+    { fname: "Suman", lname: "Sumbe", age: 52 },
+    { fname: "somnath", lname: "Sumbe", age: 32 },
+    { fname: "Sunita", lname: "Sumbe", age: 28 },
+    { fname: "Shivansh", lname: "Sumbe", age: 3 }
+  ];
 
   ngOnInit(): void {}
   onchange(value: boolean) {
@@ -33,9 +40,6 @@ export class DirectiveComponent implements OnInit {
     this.Thenblockvalue = value;
   }
 
-  compoChange(value: boolean) {
-    this.selectComponent = value;
-  }
 
   positiveNigativeCheck(value: number) {
     return (this.positiveNigativenumber =

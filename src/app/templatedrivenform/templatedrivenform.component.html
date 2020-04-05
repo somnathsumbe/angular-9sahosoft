@@ -1,0 +1,54 @@
+<p>Ragistration Form </p>
+
+<form class="form-horizontal" #regfrom="ngForm" (ngSubmit)="register(regfrom)">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Form Name</legend>
+
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-8 control-label" for="Firstname">Firstname</label>
+      <div class="col-md-8">
+        <input id="Firstname" name="Firstname" #Firstname="ngModel" type="text" placeholder="Enter Firstname" class="form-control input-md"
+          required ngModel>
+
+          <span *ngIf="Firstname.touched && !Firstname.valid" class="text-danger">Enter First Name </span>
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-8 control-label" for="Lastname">Lastname</label>
+      <div class="col-md-8">
+        <input id="Lastname" name="Lastname" type="text" #lastname="ngModel" placeholder="Enter Lastname" class="form-control input-md"
+          ngModel required>
+
+          <span class="text-danger" *ngIf="lastname.touched && !lastname.valid">Enter last Name </span>
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-8 control-label" for="Email">Email</label>
+      <div class="col-md-8">
+        <input id="Email" name="Email" type="text" #email="ngModel" placeholder="Enter Email" class="form-control input-md" required
+          ngModel>
+          <span class="text-danger" *ngIf="email.touched && !email.valid">Enter Email address </span> 
+      </div>
+    </div>
+
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-8 control-label" for="Submit"></label>
+      <div class="col-md-8">
+        <button id="Submit" name="Submit" [disabled]="!regfrom.valid" class="btn btn-info">Submit</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>

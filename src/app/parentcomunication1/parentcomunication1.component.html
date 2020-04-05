@@ -1,0 +1,11 @@
+
+<div class="container mt-3 bg-info" >
+  <div class="jumbotron text-center">
+    <h1>{{"Parent comunication 1" | uppercase}}</h1>
+    <!-- <p>Resize this responsive page to see the effect!</p> -->
+  <label for="">Parent Component :</label>
+    <input type="text" class="form-control" name="parent" id="parent" #Pdata (keyup)="0">
+  </div>
+</div>
+
+<app-parentcomunication2 [Pdata]="Pdata.value"></app-parentcomunication2>

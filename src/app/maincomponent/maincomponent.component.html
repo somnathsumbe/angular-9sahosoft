@@ -1,0 +1,41 @@
+<div class="row  col-md-12 mt-4">
+
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header ">Component Select Example</div>
+      <div class="card-body">
+        <div class="card bg-light text-dark pt-3 pb-3 col-md-4 mx-auto text-center">
+          <div class="card-body ">
+            <h3>Login</h3>
+            <hr>
+            <!-- Default unchecked -->
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios" checked
+                (click)="compoChange(true)">
+              <label class="custom-control-label" for="defaultUnchecked">Student</label>
+            </div>
+            <!-- Default checked -->
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios"
+                (click)="compoChange(false)">
+              <label class="custom-control-label" for="defaultChecked">Employee</label>
+            </div>
+          </div>
+        </div>
+
+        <ng-template [ngIf]="selectComponent">
+          <app-component1></app-component1>
+        </ng-template>
+
+
+        <ng-template [ngIf]="!selectComponent">
+          <app-component2></app-component2>
+        </ng-template>
+        </div>
+
+    </div>
+  </div>
+
+
+
+</div>

@@ -1,0 +1,61 @@
+<p>Reactive Forms</p>
+
+<form class="form-horizontal" [formGroup]='signupForm' (ngSubmit)="postData(signupForm)">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Form Name</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="fname">Firstname</label>
+      <div class="col-md-4">
+        <input id="fname" formControlName="fname" name="fname" type="text" placeholder="Enter Firstname"
+          class="form-control input-md" required="">
+
+
+        <span *ngIf="signupForm.get('fname').hasError('required')" class="text-danger"> First name required </span>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Lastname">Lastname</label>
+      <div class="col-md-4">
+        <input id="Lastname" formControlName="Lastname" name="Lastname" type="text" placeholder="Enter Lastname"
+          class="form-control input-md" required="">
+        <span *ngIf="signupForm.get('Lastname').hasError('required')" class="text-danger"> First name required </span>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Email">Email</label>
+      <div class="col-md-4">
+        <input id="Email" formControlName="Email" name="Email" type="text" placeholder="Enter Email"
+          class="form-control input-md" required="">
+        <span *ngIf="signupForm.get('Email').hasError('required')" class="text-danger"> First name required </span>
+      </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="password">password</label>
+      <div class="col-md-4">
+        <input id="password" formControlName="password" name="password" type="password" placeholder="Enter password"
+          class="form-control input-md" required="">
+        <span *ngIf="signupForm.get('password').hasError('required')" class="text-danger"> First name required </span>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Submit"></label>
+      <div class="col-md-4">
+        <button [disabled]="!signupForm.valid" class="btn btn-success">Submit</button>
+        <button class="btn btn-secondary ml-2" (click)="resetForm()">Reset</button>
+        <button class="btn btn-info ml-2" (click)="FillData()">Fill Data</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
