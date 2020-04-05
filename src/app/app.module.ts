@@ -17,6 +17,8 @@ import { MaincomponentComponent } from './maincomponent/maincomponent.component'
 import { NgstyleNgclassComponent } from './ngstyle-ngclass/ngstyle-ngclass.component';
 import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { FirstclassComponent } from './firstclass/firstclass.component';
+import { SecondclassComponent } from './secondclass/secondclass.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     MaincomponentComponent,
     NgstyleNgclassComponent,
     TemplatedrivenformComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    FirstclassComponent,
+    SecondclassComponent
   ],
   imports: [BrowserModule,FormsModule,ReactiveFormsModule],
   providers: [Hello],

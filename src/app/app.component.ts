@@ -33,11 +33,7 @@ class xyz {
   //  encapsulation:ViewEncapsulation.None
 })
 export class AppComponent {
-  title = "angular 9 project";
-  name = "somnath";
-  city = "pune";
-  num1 = 200;
-  num2 = 100;
+
 
   constructor(public abc: abc, public xyz: xyz, public hello: Hello) {
     console.log(abc.x);
@@ -49,9 +45,7 @@ export class AppComponent {
 
   }
 
-  changecity() {
-    this.city = " Ahmednagar";
-  }
+
   // company = {
   //   name: "somnath sumbe" ,
   //   city: "ahmednagar",
