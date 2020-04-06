@@ -10,8 +10,11 @@ import { AsyncexampleComponent } from "./asyncexample/asyncexample.component";
 import { NgstyleNgclassComponent } from "./ngstyle-ngclass/ngstyle-ngclass.component";
 import { TemplatedrivenformComponent } from "./templatedrivenform/templatedrivenform.component";
 import { ReactiveformComponent } from "./reactiveform/reactiveform.component";
+import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 
 const routes: Routes = [
+  // when application start open this component or default route redireacting route
+  { path: "", redirectTo: "/firstclass", pathMatch: "full" },
   { path: "firstclass", component: FirstclassComponent },
   { path: "secondclass", component: SecondclassComponent },
   { path: "forthclass", component: ForthclassComponent },
@@ -22,6 +25,9 @@ const routes: Routes = [
   { path: "ngstyle-ngclass", component: NgstyleNgclassComponent },
   { path: "templatedrivenform", component: TemplatedrivenformComponent },
   { path: "reactiveform", component: ReactiveformComponent },
+
+  //wildcart route its always used last if page not in appl then this page will show
+  { path: "**", component: PagenotfoundComponent },
 ];
 
 @NgModule({

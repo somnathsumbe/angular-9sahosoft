@@ -22,6 +22,7 @@ import { SecondclassComponent } from './secondclass/secondclass.component';
 import { ForthclassComponent } from './forthclass/forthclass.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HeaderComponent } from './header/header.component';
     FirstclassComponent,
     SecondclassComponent,
     ForthclassComponent,
-    HeaderComponent
+    HeaderComponent,
+    PagenotfoundComponent
   ],
   imports: [BrowserModule,FormsModule,ReactiveFormsModule, AppRoutingModule],
   providers: [Hello],
