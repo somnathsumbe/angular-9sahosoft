@@ -19,6 +19,9 @@ import { TemplatedrivenformComponent } from './templatedrivenform/templatedriven
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { FirstclassComponent } from './firstclass/firstclass.component';
 import { SecondclassComponent } from './secondclass/secondclass.component';
+import { ForthclassComponent } from './forthclass/forthclass.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -38,9 +41,11 @@ import { SecondclassComponent } from './secondclass/secondclass.component';
     TemplatedrivenformComponent,
     ReactiveformComponent,
     FirstclassComponent,
-    SecondclassComponent
+    SecondclassComponent,
+    ForthclassComponent,
+    HeaderComponent
   ],
-  imports: [BrowserModule,FormsModule,ReactiveFormsModule],
+  imports: [BrowserModule,FormsModule,ReactiveFormsModule, AppRoutingModule],
   providers: [Hello],
   bootstrap: [AppComponent]
 })

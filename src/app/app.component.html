@@ -1,5 +1,3 @@
-
-
 <!-- Name : {{company.name}}
 City : {{company.city}}
 state: {{company.state}} -->
@@ -50,12 +48,9 @@ India: {{company ? company.country : "No Data Found" }} -->
   <ng-template [ngIf]="true">
    HI how are you
  </ng-template> -->
-<!-- <app-firstclass></app-firstclass> -->
-<app-secondclass></app-secondclass>
-<!-- <app-directive></app-directive> -->
-<!-- <app-maincomponent> </app-maincomponent> -->
-<!-- <app-parentcomunication1></app-parentcomunication1> -->
-<!-- <app-asyncexample></app-asyncexample> -->
-<!-- <app-ngstyle-ngclass></app-ngstyle-ngclass> -->
-<!-- <app-templatedrivenform></app-templatedrivenform> -->
-<!-- <app-reactiveform></app-reactiveform> -->
+
+
+<app-header></app-header>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
