@@ -30,6 +30,7 @@ import { BasicComponent } from './maxmillion/basic/basic.component';
 import { ServersComponent } from './maxmillion/servers/servers.component';
 import { ServerComponent } from './maxmillion/server/server.component';
 import { Assigment1Component } from './maxmillion/assigment1/assigment1.component';
+import { Assigment2Component } from './maxmillion/assigment2/assigment2.component';
 
 
 
@@ -61,6 +62,7 @@ import { Assigment1Component } from './maxmillion/assigment1/assigment1.componen
     ServersComponent,
     ServerComponent,
     Assigment1Component,
+    Assigment2Component,
 
 
   ],

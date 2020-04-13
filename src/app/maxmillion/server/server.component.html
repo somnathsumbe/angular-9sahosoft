@@ -1,13 +1,12 @@
 
 <div class="card mt-1">
   <div class="card-body">
-    <p><span class="text-success font-weight-bold">String Interpolation Binding :</span> {{"Server"}} with ID {{serverID}} is {{serverStatus}}</p>
+    <p [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{'text-white':serverStatus==='online'}"><span class=" font-weight-bold">String Interpolation Binding :</span> {{"Server"}} with ID {{serverID}} is {{serverStatus}}</p>
   </div>
 </div>
 
 <div class="card mt-1">
   <div class="card-body">
-    <p ><span class="text-success font-weight-bold">getServerStatus method :</span> {{"Server"}} with ID {{serverID}} is {{getServerStatus()}}</p>
-
+    <p   [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{'text-white':serverStatus==='online'}"><span class=" font-weight-bold">getServerStatus method :</span> {{"Server"}} with ID {{serverID}} is {{getServerStatus()}}</p>
   </div>
 </div>

@@ -10,6 +10,11 @@
         [disabled]="!allowNewServer" (click)="onCreateServer()" class="btn btn-info m-2">Add Servers</button></p>
     <p>allowNewServer : {{allowNewServer}}</p>
     <p class="text-danger"> Replace Inperpolation to innerText property :<span [innerText]="allowNewServer"></span></p>
-    <p><span class="text-success font-weight-bold">Event Binding to Add Servers btn: </span>{{serverCreationStatus}}</p>
+    <p *ngIf="serverCreated; else noServer "><span class="text-success font-weight-bold">Event Binding to Add Servers btn: </span>{{serverCreationStatus}}</p>
+  <ng-template #noServer>
+    <p class="bg-danger">No Server Created</p>
+  </ng-template>
+  
+  <app-server *ngFor="let server of server"></app-server>
   </div>
 </div>

@@ -1,0 +1,18 @@
+<button type="button" class="btn btn-info" (click)="addDate()">Display Date</button>
+<div class="row">
+<div class="col-md-4">
+    <p *ngFor="let p of pushDate; let i=index">
+        <span [ngClass]="{'bg-success p-2':i>4 }">{{p}}</span>
+    </p>
+</div>
+<div class="col-md-4">
+    <p *ngFor="let p of pushDate; let i=index">
+        <span [ngClass]="{'bg-warning p-2':i%2==0 }">{{p}}</span>
+    </p>
+</div>
+<div class="col-md-4">
+    <p *ngFor="let p of pushDate; let i=index">
+        <span [ngClass]="{'bg-danger p-2':i%2==1 }">{{p}}</span>
+    </p>
+</div>
+</div>
