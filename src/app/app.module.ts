@@ -36,7 +36,6 @@ import { RecipesheaderComponent } from './maxmillion/recipibookproject/mainrecip
 import { RecipesComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipes.component';
 import { RecipeListComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-edit/shopping-edit.component';
 
@@ -76,7 +75,6 @@ import { ShoppingEditComponent } from './maxmillion/recipibookproject/mainrecipe
     RecipesComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
 
