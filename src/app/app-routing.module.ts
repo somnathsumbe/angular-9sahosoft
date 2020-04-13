@@ -14,6 +14,7 @@ import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { BasicComponent } from './maxmillion/basic/basic.component';
+import { MainrecipesComponent } from './maxmillion/recipibookproject/mainrecipes/mainrecipes.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: "app-pipes", component: PipesComponent },
   //maxmillion
   { path: "basic", component: BasicComponent },
+  { path: "recipes", component: MainrecipesComponent },
 
 
   //wildcart route its always used last if page not in appl then this page will show

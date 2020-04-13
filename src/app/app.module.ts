@@ -31,6 +31,14 @@ import { ServersComponent } from './maxmillion/servers/servers.component';
 import { ServerComponent } from './maxmillion/server/server.component';
 import { Assigment1Component } from './maxmillion/assigment1/assigment1.component';
 import { Assigment2Component } from './maxmillion/assigment2/assigment2.component';
+import { MainrecipesComponent } from './maxmillion/recipibookproject/mainrecipes/mainrecipes.component';
+import { RecipesheaderComponent } from './maxmillion/recipibookproject/mainrecipes/recipesheader/recipesheader.component';
+import { RecipesComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipes.component';
+import { RecipeListComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-edit/shopping-edit.component';
 
 
 
@@ -63,6 +71,14 @@ import { Assigment2Component } from './maxmillion/assigment2/assigment2.componen
     ServerComponent,
     Assigment1Component,
     Assigment2Component,
+    MainrecipesComponent,
+    RecipesheaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
 
 
   ],
