@@ -1,0 +1,54 @@
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header bg-info text-white">Pipes</div>
+      <div class="card-body">
+        Pipes are used to format the data before displaying in the View. Pipe is used by using | operator. This
+        symbol is called a Pipe Operator.
+        <ul>
+          <li>Pipes were earlier called filters in Angular1 and called pipes in Angular 2 and higher.</li>
+          <li>Angular Pipes can be used to transform data to desired output.</li>
+          <li>Pipes takes in a data input and transforms data to a different output.</li>
+          <li>Pipes (|) in Angular are used to transform the data before displaying it in a browser. Angular provides a
+            lot of built-in pipes to translate the data before displaying it into the browser and as we know, Angular
+            lets us extend its feature, we can even create custom pipes in Angular. </li>
+        </ul>
+
+
+        Angular provides some built-in pipes:<br>
+        1. Lowercase<br>
+        2. Uppercase<br>
+        3. Titlecase<br>
+        4. Slice<br>
+        5. Json Pipe<br>
+        6. Decimalpipe<br>
+        7. Percent Pipe<br>
+        8. Currency Pipe<br>
+        9. Date Pipe<br>
+        10.Percent Pipe
+
+
+      </div>
+
+      <div class="card-footer bg-info  text-white"></div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header bg-info text-white">pipes Example</div>
+      <div class="card-body">
+        <p>Interpolation : {{name}}</p>
+        <P>uppercase : {{name |uppercase}}</P>
+        <p>lowercase : {{name |lowercase}}</p>
+        <p>titlecase : {{name |titlecase}}</p>
+        <p ngNonBindable> ngNonBindable : {{name |slice:5:7}}</p>
+        <p>slice 5 : {{name |slice:5}}</p>
+        <p>slice 5 to 9: {{name |slice:5:7}}</p>
+        <p>json pipe: {{family |json}}</p>
+      </div>
+
+      <div class="card-footer bg-info  text-white">Pipes always lowercase</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="card mt-1">
+  <div class="card-body">
+    <p class="text-success font-weight-bold">Two-way Databinding with $event & [(ngModel)]</p>
+    <label for="Server Name">Server Name</label>
+    <!-- <input type="text" class="form-control"[value]="serverName" (input)="onUpdateServerName($event)"> -->
+    <input type="text" class="form-control" [(ngModel)]="serverName" (input)="onUpdateServerName($event)">
+    <p>{{serverName}}</p>
+    <hr>
+    <p class="text-success font-weight-bold">Property Binding [disabled] : <button type="button"
+        [disabled]="!allowNewServer" (click)="onCreateServer()" class="btn btn-info m-2">Add Servers</button></p>
+    <p>allowNewServer : {{allowNewServer}}</p>
+    <p class="text-danger"> Replace Inperpolation to innerText property :<span [innerText]="allowNewServer"></span></p>
+    <p><span class="text-success font-weight-bold">Event Binding to Add Servers btn: </span>{{serverCreationStatus}}</p>
+  </div>
+</div>

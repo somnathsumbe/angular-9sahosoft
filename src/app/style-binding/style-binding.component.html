@@ -1,0 +1,146 @@
+<div class="row mt-3">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-info text-white">Style binding</div>
+      <div class="card-body">
+        <button type="button" class="btn btn-primary" style="color:red">Click Me</button><br>
+        <button type="button" class="btn btn-info mt-1" [style.font-weight]="'bold'">Click Me</button><br>
+
+        <p [style.color]="isbold ? 'red' : 'yellow'">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Repellendus, asperiores.</p>
+
+
+        <button type="button" class="btn btn-primary" style="color:red" [ngStyle]="getcss()">Click Me</button><br>
+
+
+        <p [style.fontWeight]="'bold'">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Repellendus, asperiores.</p>
+      </div>
+      <div class="card-footer bg-info  text-white">Oneway DataBinding component to view</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-info text-white">Class binding</div>
+      <div class="card-body">
+        <button type="button" class="btn bg-info ">Click Me</button><br>
+        <button type="button" [class]="btnclass">Click Me</button><br>
+
+        <button type="button" class="btn-lg" [class]="btnclass">Click Me</button><br>
+
+        <button type="button" class="btn-lg mt-2" [class.font-weight-bold]="applyclass">Click Me</button><br>
+
+        <button type="button" class="btn-lg mt-2" [class.font-weight-bold]="!applyclass">Click Me</button><br>
+
+      </div>
+      <!-- <div class="card-footer bg-info  text-white"></div> -->
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-info text-white">ngClass</div>
+      <div class="card-body">
+        <button type="button" class="btn  " [ngClass]='addCssClasses()'>Click Me</button><br>
+
+      </div>
+      <!-- <div class="card-footer bg-info  text-white"></div> -->
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-info text-white">property Binding</div>
+      <div class="card-body">
+        Interpolation : <span innerHTML={{name}}></span><br>
+        PropertyBinding : <span [innerHTML]='name'></span><br>
+
+        Interpolation : <img src={{imgPath}} alt="" style="height: 100px ; width: 70px;">
+        PropertyBinding : <img [src]="imgPath" alt="" style="height: 100px ; width: 70px;">
+
+        <div class="mt-2">
+          <hr>
+          Interpolation : <button type="button" class="btn btn-info mb-2" (click)="enableddisabled()">change
+            btnvalue</button>
+          <br><br>
+          Interpolation : <button type="button" class="btn btn-info" disabled={{currantvalue}}>Click Me</button>
+          PropertyBinding : <button type="button" class="btn btn-info" [disabled]="currantvalue">Click Me</button>
+        </div>
+      </div>
+      <div class="card-footer bg-info  text-white">Always used Property Binding</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-info text-white">Event Binding</div>
+      <div class="card-body">
+        <button type="button" class="btn btn-info ml-2" (click)="click1()">Click Me 1</button>
+        <button type="button" class="btn btn-info ml-2" (click)="click2()">Click Me 2</button>
+        <hr>
+
+        <button type="button" class="btn btn-info ml-2" (click)="change(true)">true</button>
+        <button type="button" class="btn btn-info ml-2" (click)="change(false)">false</button>
+        <div *ngIf="isvalid">Data is valid</div>
+        <div *ngIf="!isvalid">Data is Not valid</div>
+
+
+        <hr>
+        <p>keyup keydown event binding</p>
+        <input type="text" (keyup)="keyup()" (keydown)="keydown()">
+
+
+        <hr>
+        <p>keyup keydown event binding conical form</p>
+        <input type="text" on-keyup="keyup()" on-keydown="keydown()">
+
+
+
+
+      </div>
+      <div class="card-footer bg-info  text-white"></div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header bg-info text-white">Event Binding</div>
+      <div class="card-body">
+        <p>input event binding</p>
+        <input type="text" on-input="inputevent()">
+
+        <hr>
+        <p>$event</p>
+        <input type="text" (input)="setmsg($event.target.value)">
+        <p>you have Enter {{msg}}</p>
+
+      </div>
+      <div class="card-footer bg-info  text-white"></div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header bg-info text-white">Two way Binding</div>
+      <div class="card-body">
+        <p>$event</p>
+        <input type="text" [value]="msg" (input)="setmsg($event.target.value)">
+        <p>you have Enter {{msg}}</p>
+        <p>Two way data Binding</p>
+        <input type="text" [(ngModel)]="msg">
+        <p>you have Enter {{msg}}</p>
+      </div>
+    </div>
+  </div>
+</div>

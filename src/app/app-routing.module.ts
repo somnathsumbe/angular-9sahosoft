@@ -11,6 +11,10 @@ import { NgstyleNgclassComponent } from "./ngstyle-ngclass/ngstyle-ngclass.compo
 import { TemplatedrivenformComponent } from "./templatedrivenform/templatedrivenform.component";
 import { ReactiveformComponent } from "./reactiveform/reactiveform.component";
 import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { BasicComponent } from './maxmillion/basic/basic.component';
+
 
 const routes: Routes = [
   // when application start open this component or default route redireacting route
@@ -25,6 +29,11 @@ const routes: Routes = [
   { path: "ngstyle-ngclass", component: NgstyleNgclassComponent },
   { path: "templatedrivenform", component: TemplatedrivenformComponent },
   { path: "reactiveform", component: ReactiveformComponent },
+  { path: "stylebinding", component: StyleBindingComponent },
+  { path: "app-pipes", component: PipesComponent },
+  //maxmillion
+  { path: "basic", component: BasicComponent },
+
 
   //wildcart route its always used last if page not in appl then this page will show
   { path: "**", component: PagenotfoundComponent },

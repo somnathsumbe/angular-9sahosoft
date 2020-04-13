@@ -1,16 +1,8 @@
 <div class="container-fluid">
-  <div class="row mb-2 ">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-body bg-info text-center text-white">Attribute Direactive ngStyle ngClass </div>
-      </div>
-    </div>
-
-  </div>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="card">
-        <div class="card-header">ngStyle</div>
+        <div class="card-header bg-info">ngStyle</div>
         <div class="card-body">
           <div [ngStyle]="{'background-color': myCountry=='India' ? 'pink' : 'red' }">Lorem, ipsum dolor.</div>
           <h5 class="mt-2">background color change </h5>
@@ -38,48 +30,120 @@
             </li>
           </ul>
 
-          
+
         </div>
         <div class="card-footer">Footer</div>
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="card">
-        <div class="card-header">ngStyle</div>
+        <div class="card-header bg-info">ngStyle</div>
         <div class="card-body">
-            <h5>font size change</h5>
-            <ul>
-                <li *ngFor="let fdata of familydatas" [ngStyle]="{'font-size.px': 20}">
-                  {{fdata.fname}}{{fdata.lname}}{{fdata.age}}
-                </li>
-              </ul>
+          <h5>font size change</h5>
+          <ul>
+            <li *ngFor="let fdata of familydatas" [ngStyle]="{'font-size.px': 20}">
+              {{fdata.fname}}{{fdata.lname}}{{fdata.age}}
+            </li>
+          </ul>
 
 
-              <ul>
-                <li *ngFor="let fdata of familydatas" [ngStyle]="{'font-size.px': textSize}">
-                  {{fdata.fname}}{{fdata.lname}}{{fdata.age}}
-                </li>
-              </ul>
+          <ul>
+            <li *ngFor="let fdata of familydatas" [ngStyle]="{'font-size.px': textSize}">
+              {{fdata.fname}}{{fdata.lname}}{{fdata.age}}
+            </li>
+          </ul>
 
 
-              <ul>
-                <li *ngFor="let fdata of familydatas" [ngStyle]="{'font-size.px': textSize}">
-                  {{fdata.fname}}{{fdata.lname}}{{fdata.age}}
-                </li>
-              </ul>
+          <ul>
+            <li *ngFor="let fdata of familydatas" [ngStyle]="{'font-size.px': textSize}">
+              {{fdata.fname}}{{fdata.lname}}{{fdata.age}}
+            </li>
+          </ul>
 
         </div>
         <div class="card-footer">Footer</div>
       </div>
     </div>
 
-    <div class="col-md-4">
+  </div>
+
+  <div class="row">
+
+
+    <div class="col-md-6">
       <div class="card">
-        <div class="card-header">Header</div>
-        <div class="card-body">Content</div>
+        <div class="card-header bg-info">ng class using string</div>
+        <div class="card-body">
+
+          <p>ngClass Example add bg-info text-white p-2 below div</p>
+          <div [ngClass]="'bg-info text-white p-2'">Hello world !</div>
+
+          <div [ngClass]="'display-4'">Hello world !</div>
+
+          <div *ngFor="let familydata1 of familydatas" [ngClass]="'bg-info'">
+            <p mt-1> {{familydata1.fname}} {{familydata1.lname}} {{familydata1.age}}</p>
+          </div>
+
+        </div>
         <div class="card-footer">Footer</div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-info">ng class using Array</div>
+        <div class="card-body">
+
+          <p>ngClass Example add bg-info text-white p-2 below div</p>
+          <div [ngClass]="['bg-success', 'text-white', 'p-2']">Hello world !</div>
+
+          <div [ngClass]="['display-3', 'text-danger']">Hello world !</div>
+
+          <div *ngFor="let familydata1 of familydatas" [ngClass]="['bg-warning']">
+            <p mt-1> {{familydata1.fname}} {{familydata1.lname}} {{familydata1.age}}</p>
+          </div>
+
+        </div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="row">
+
+
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header bg-info">{{'ng class using object' |uppercase}}</div>
+        <div class="card-body">
+
+          <p>ngClass Example add bg-info text-white p-2 below div</p>
+          <div [ngClass]="{'bg-info':true}">Hello world !</div>
+
+          <div [ngClass]="{'bg-info':false ,'bg-danger':true ,'mb-2':true }">Hello world !</div>
+
+          <div *ngFor="let familydata1 of familydatas ; index as i">
+            <p mt-1 [ngClass]="{'bg-danger':i%2==0 , 'bg-info':i%2==1}"> {{familydata1.fname}} {{familydata1.lname}}
+              {{familydata1.age}}</p>
+          </div>
+
+
+
+
+          <div *ngFor="let familydata1 of familydatas ; index as i">
+            <p mt-1
+              [ngClass]="{'bg-danger':familydata1.fname=='Muktaji'}">
+              {{familydata1.fname}} {{familydata1.lname}}
+              {{familydata1.age}}</p>
+          </div>
+        </div>
+        <div class="card-footer">Footer</div>
+      </div>
+    </div>
+
+
   </div>
 </div>

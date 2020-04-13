@@ -19,6 +19,7 @@ export class NgstyleNgclassComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  color=true;
   getColor(person) {
     switch (person) {
       case "Muktaji":

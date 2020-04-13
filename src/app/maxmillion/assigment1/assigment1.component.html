@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-8">
+    <ul class="list-group">
+      <li class="list-group-item active">Please complete the tasks outlined in the instructions video. Why did you
+        choose
+        the approach you took? Which problems did you encounter?</li>
+      <li class="list-group-item">To solve the:</li>
+      <li class="list-group-item">Input name, I used the two-way-binding;</li>
+      <li class="list-group-item">Name display, I used the String interpolation;</li>
+      <li class="list-group-item">Clear button, I checked whether the variable userName was filled by using property
+        binding
+        and if yes - I set the variable to empty by using event binding.
+
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="">Username</label>
+      <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder=""
+        [(ngModel)]="username">
+      <small id="helpId" class="form-text text-muted">{{username}}</small>
+
+      <button type="button" class="btn btn-info" [disabled]="username ===''" (click)="username = ''">Reset</button>
+    </div>
+  </div>
+</div>
