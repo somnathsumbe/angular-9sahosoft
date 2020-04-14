@@ -1,25 +1,22 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { CounterChildComponent } from '../counter-child/counter-child.component';
-
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { CounterChildComponent } from "../counter-child/counter-child.component";
 
 @Component({
-  selector: 'app-counter-parent',
-  templateUrl: './counter-parent.component.html',
-  styleUrls: ['./counter-parent.component.css']
+  selector: "app-counter-parent",
+  templateUrl: "./counter-parent.component.html",
+  styleUrls: ["./counter-parent.component.css"],
 })
 export class CounterParentComponent implements OnInit {
-@ViewChild('CounterChildComponent', {static: true}) CounterChildComponent: CounterChildComponent;
-  constructor() { }
+  @ViewChild(CounterChildComponent, { static: true })
+  CounterChildComponent: CounterChildComponent;
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   ParentIncrease() {
-console.log("ParentIncrease");
+    console.log("ParentIncrease");
     this.CounterChildComponent.childIncrease();
   }
-  ParentIncreaseDecrease() {
+  ParentDecrease() {
     this.CounterChildComponent.ChildDecrease();
   }
-  
-
 }

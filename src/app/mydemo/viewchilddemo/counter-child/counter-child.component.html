@@ -1,1 +1,4 @@
-{{msg}}
+<div class="card mt-3">
+  <p>child Component</p>
+  <div class="card-body text-success" [ngClass]="{'text-danger': count < 0}">{{"Count : "+count}}</div>
+</div>

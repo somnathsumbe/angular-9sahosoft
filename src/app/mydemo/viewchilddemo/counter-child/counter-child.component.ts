@@ -6,19 +6,16 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./counter-child.component.css"],
 })
 export class CounterChildComponent implements OnInit {
-  conunt: number = 0;
-  msg: string='';
+  count: number = 0;
   constructor() {}
 
   ngOnInit(): void {}
 
   childIncrease() {
-    alert("2");
-    this.conunt = this.conunt + 1;
-    this.msg = "Count : " + this.conunt;
+    console.log("childIncrease");
+    this.count = this.count + 1;
   }
   ChildDecrease() {
-    this.conunt = this.conunt - 1;
-    this.msg = "Count : " + this.conunt;
+    this.count = this.count - 1;
   }
 }
