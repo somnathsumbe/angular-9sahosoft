@@ -16,6 +16,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { BasicComponent } from './maxmillion/basic/basic.component';
 import { MainrecipesComponent } from './maxmillion/recipibookproject/mainrecipes/mainrecipes.component';
 import { ViewchildmainpageComponent } from './mydemo/viewchilddemo/viewchildmainpage/viewchildmainpage.component';
+import { MaininputoutputComponent } from './mydemo/@input@output/maininputoutput/maininputoutput.component';
+import { Parent1communicationComponent } from './mydemo/@output/parent1communication/parent1communication.component';
 
 
 const routes: Routes = [
@@ -37,6 +39,8 @@ const routes: Routes = [
   { path: "templatedrivenform", component: TemplatedrivenformComponent },
   { path: "reactiveform", component: ReactiveformComponent },
   { path: "viewchild", component: ViewchildmainpageComponent },
+  { path: "Parentchild", component: MaininputoutputComponent },
+  { path: "childparent", component: Parent1communicationComponent },
 
   //maxmillion
   { path: "basic", component: BasicComponent },

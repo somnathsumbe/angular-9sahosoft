@@ -42,6 +42,11 @@ import { ShoppingEditComponent } from './maxmillion/recipibookproject/mainrecipe
 import { ViewchildmainpageComponent } from './mydemo/viewchilddemo/viewchildmainpage/viewchildmainpage.component';
 import { CounterChildComponent } from './mydemo/viewchilddemo/counter-child/counter-child.component';
 import { CounterParentComponent } from './mydemo/viewchilddemo/counter-parent/counter-parent.component';
+import { MaininputoutputComponent } from './mydemo/@input@output/maininputoutput/maininputoutput.component';
+import { Child1Component } from './mydemo/@input@output/child1/child1.component';
+import { Parent1communicationComponent } from './mydemo/@output/parent1communication/parent1communication.component';
+import { Child1communicationComponent } from './mydemo/@output/child1communication/child1communication.component';
+
 
 
 
@@ -85,6 +90,10 @@ import { CounterParentComponent } from './mydemo/viewchilddemo/counter-parent/co
     ViewchildmainpageComponent,
     CounterChildComponent,
     CounterParentComponent,
+    MaininputoutputComponent,
+    Child1Component,
+    Parent1communicationComponent,
+    Child1communicationComponent
 
 
   ],
