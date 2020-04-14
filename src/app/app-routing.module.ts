@@ -15,10 +15,12 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { BasicComponent } from './maxmillion/basic/basic.component';
 import { MainrecipesComponent } from './maxmillion/recipibookproject/mainrecipes/mainrecipes.component';
+import { ViewchildmainpageComponent } from './mydemo/viewchilddemo/viewchildmainpage/viewchildmainpage.component';
 
 
 const routes: Routes = [
   // when application start open this component or default route redireacting route
+  //class demo
   { path: "", redirectTo: "/firstclass", pathMatch: "full" },
   { path: "firstclass", component: FirstclassComponent },
   { path: "secondclass", component: SecondclassComponent },
@@ -28,10 +30,14 @@ const routes: Routes = [
   { path: "parentcomunication1", component: Parentcomunication1Component },
   { path: "asyncexample", component: AsyncexampleComponent },
   { path: "ngstyle-ngclass", component: NgstyleNgclassComponent },
+  { path: "stylebinding", component: StyleBindingComponent },
+  { path: "app-pipes", component: PipesComponent }, 
+
+  //mydemo 
   { path: "templatedrivenform", component: TemplatedrivenformComponent },
   { path: "reactiveform", component: ReactiveformComponent },
-  { path: "stylebinding", component: StyleBindingComponent },
-  { path: "app-pipes", component: PipesComponent },
+  { path: "viewchild", component: ViewchildmainpageComponent },
+
   //maxmillion
   { path: "basic", component: BasicComponent },
   { path: "recipes", component: MainrecipesComponent },

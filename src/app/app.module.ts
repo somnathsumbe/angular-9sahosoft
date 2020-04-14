@@ -39,6 +39,9 @@ import { RecipeDetailComponent } from './maxmillion/recipibookproject/mainrecipe
 import { RecipeItemComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-edit/shopping-edit.component';
+import { ViewchildmainpageComponent } from './mydemo/viewchilddemo/viewchildmainpage/viewchildmainpage.component';
+import { CounterChildComponent } from './mydemo/viewchilddemo/counter-child/counter-child.component';
+import { CounterParentComponent } from './mydemo/viewchilddemo/counter-parent/counter-parent.component';
 
 
 
@@ -79,6 +82,9 @@ import { ShoppingEditComponent } from './maxmillion/recipibookproject/mainrecipe
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    ViewchildmainpageComponent,
+    CounterChildComponent,
+    CounterParentComponent,
 
 
   ],
