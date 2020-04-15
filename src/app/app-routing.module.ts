@@ -18,6 +18,7 @@ import { MainrecipesComponent } from './maxmillion/recipibookproject/mainrecipes
 import { ViewchildmainpageComponent } from './mydemo/viewchilddemo/viewchildmainpage/viewchildmainpage.component';
 import { MaininputoutputComponent } from './mydemo/@input@output/maininputoutput/maininputoutput.component';
 import { Parent1communicationComponent } from './mydemo/@output/parent1communication/parent1communication.component';
+import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
 
 
 const routes: Routes = [
@@ -45,6 +46,9 @@ const routes: Routes = [
   //maxmillion
   { path: "basic", component: BasicComponent },
   { path: "recipes", component: MainrecipesComponent },
+
+    //Myapp
+    { path: "camera", component: CameraappComponent },
 
 
   //wildcart route its always used last if page not in appl then this page will show

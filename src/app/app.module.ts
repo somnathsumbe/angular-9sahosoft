@@ -46,6 +46,7 @@ import { MaininputoutputComponent } from './mydemo/@input@output/maininputoutput
 import { Child1Component } from './mydemo/@input@output/child1/child1.component';
 import { Parent1communicationComponent } from './mydemo/@output/parent1communication/parent1communication.component';
 import { Child1communicationComponent } from './mydemo/@output/child1communication/child1communication.component';
+import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
 
 
 
@@ -93,7 +94,8 @@ import { Child1communicationComponent } from './mydemo/@output/child1communicati
     MaininputoutputComponent,
     Child1Component,
     Parent1communicationComponent,
-    Child1communicationComponent
+    Child1communicationComponent,
+    CameraappComponent
 
 
   ],

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 offset-md-2">
+      <video #vedio autoplay [ngStyle]="setFilter()"></video>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12 text-center">
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="" [checked]="blur" (change)="blur =!blur">blur
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="" [checked]="sapia" (change)="sapia =!sapia">sapia
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="" [checked]="invert" (change)="invert =!invert">invert
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="" [checked]="flip" (change)="flip =!flip">flip
+        </label>
+      </div>
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="" [checked]="grayscale"
+            (change)="grayscale =!grayscale">grayscale
+        </label>
+      </div>
+
+      <div class="form-check-inline">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="" [checked]="dshow"
+            (change)="dshow =!dshow">drop-shodow
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
