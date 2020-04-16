@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-12">
+    <form action="">
+      <input type="text" name="search" [(ngModel)]="search" placeholder="Search Photos ...">
+      <input type="number" name="perPage" [(ngModel)]="perPage" placeholder="Enter Photos number ...">
+      <button (click)="searchPhtos()">Search</button>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let img of data">
+        <img [src]="img.src.medium">
+      </div>
+    </div>
+  </div>
+</div>

@@ -19,6 +19,7 @@ import { ViewchildmainpageComponent } from './mydemo/viewchilddemo/viewchildmain
 import { MaininputoutputComponent } from './mydemo/@input@output/maininputoutput/maininputoutput.component';
 import { Parent1communicationComponent } from './mydemo/@output/parent1communication/parent1communication.component';
 import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
+import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component';
 
 
 const routes: Routes = [
@@ -49,6 +50,7 @@ const routes: Routes = [
 
     //Myapp
     { path: "camera", component: CameraappComponent },
+    { path: "photosearch", component: PhotosearchComponent },
 
 
   //wildcart route its always used last if page not in appl then this page will show
