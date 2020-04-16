@@ -8,7 +8,7 @@ import { PhotoService } from "./service/photo.service";
 })
 export class PhotosearchComponent implements OnInit {
   search:string;
-  perPage:number;
+  perPage:number=10;
   data:string[];
   constructor(private _photoService: PhotoService) {
     this._photoService.getdata(this.search, this.perPage);
@@ -17,7 +17,6 @@ export class PhotosearchComponent implements OnInit {
   ngOnInit(): void {}
 
   searchPhtos() {
-    alert();
     this._photoService.getdata(this.search, this.perPage).subscribe(
       (data) => {
         this.data = data.photos;

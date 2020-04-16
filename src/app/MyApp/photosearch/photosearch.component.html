@@ -1,18 +1,25 @@
-<div class="row">
-  <div class="col-md-12">
-    <form action="">
-      <input type="text" name="search" [(ngModel)]="search" placeholder="Search Photos ...">
-      <input type="number" name="perPage" [(ngModel)]="perPage" placeholder="Enter Photos number ...">
-      <button (click)="searchPhtos()">Search</button>
-    </form>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
+<div class="card bg-dark mt-3 mb-3">
+  <div class="card-body">
     <div class="row">
-      <div class="col-md-3" *ngFor="let img of data">
-        <img [src]="img.src.medium">
+      <div class="col-md-8">
+        <div class="form-group">
+          <input type="text" class="form-control" name="search" [(ngModel)]="search" placeholder="Search Photos ... ">
+        </div>
+      </div>
+      <div class="col-md-2">
+
+        <input type="number" class="form-control" name="perPage" [(ngModel)]="perPage"
+          placeholder="Number Of Photo ...">
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-success btn-block bg-lg" (click)="searchPhtos()">Search</button>
       </div>
     </div>
   </div>
 </div>
+
+<ul class="p-0">
+  <li *ngFor="let img of data ; let i=index">
+    <img *ngIf=" i < perPage" [src]="img.src.medium" class="img-thumbnail p-3" alt="Cinque Terre">
+  </li>
+</ul>
