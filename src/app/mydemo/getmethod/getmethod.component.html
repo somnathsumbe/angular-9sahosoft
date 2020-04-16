@@ -1,0 +1,29 @@
+<div class="row mt-3">
+    <div class="col-md-12">
+        <div class="card ">
+            <div class="card-header bg-info text-white">Get Service</div>
+            <div class="card-body">
+                <!-- //stap 11 data featch using ng for  -->
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Body</th>
+                      </tr>
+                    </thead>
+                    <tbody>   
+                      <tr  *ngFor="let softbook of softbooks ; let i=index" [ngClass]="{'table-primary': i%2==0}"  >
+                        <td >{{softbook.id}}</td>
+                        <td>{{softbook.title}}</td>
+                        <td>{{softbook.body}}</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+            <div class="card-footer bg-info text-white">Footer</div>
+          </div>
+    </div>
+</div>
+

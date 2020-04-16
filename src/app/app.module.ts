@@ -48,9 +48,8 @@ import { Parent1communicationComponent } from './mydemo/@output/parent1communica
 import { Child1communicationComponent } from './mydemo/@output/child1communication/child1communication.component';
 import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
 import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component';
-
-
-
+import { GetmethodComponent } from './mydemo/getmethod/getmethod.component';
+import { BookinmemoryService } from './mydemo/getmethod/bookinmemory.service';
 
 @NgModule({
   declarations: [
@@ -97,7 +96,8 @@ import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component'
     Parent1communicationComponent,
     Child1communicationComponent,
     CameraappComponent,
-    PhotosearchComponent
+    PhotosearchComponent,
+    GetmethodComponent
 
 
   ],
@@ -106,11 +106,11 @@ import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component'
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
 
   ],
 
-  providers: [Hello],
+  providers: [Hello,BookinmemoryService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

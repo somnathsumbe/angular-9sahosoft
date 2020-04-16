@@ -20,6 +20,7 @@ import { MaininputoutputComponent } from './mydemo/@input@output/maininputoutput
 import { Parent1communicationComponent } from './mydemo/@output/parent1communication/parent1communication.component';
 import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
 import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component';
+import { GetmethodComponent } from './mydemo/getmethod/getmethod.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: "viewchild", component: ViewchildmainpageComponent },
   { path: "Parentchild", component: MaininputoutputComponent },
   { path: "childparent", component: Parent1communicationComponent },
+  { path: "getmethod", component: GetmethodComponent },
 
   //maxmillion
   { path: "basic", component: BasicComponent },
