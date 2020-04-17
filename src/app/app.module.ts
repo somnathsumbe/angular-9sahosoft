@@ -50,6 +50,11 @@ import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
 import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component';
 import { GetmethodComponent } from './mydemo/getmethod/getmethod.component';
 import { BookinmemoryService } from './mydemo/getmethod/bookinmemory.service';
+import { MrmissPipe } from './pipes/mrmiss.pipe';
+import { WelcomePipe } from './pipes/welcome.pipe';
+import { GreetingPipe } from './pipes/greeting.pipe';
+import { BoldPipe } from './pipes/bold.pipe';
+import { ReversPipe } from './pipes/revers.pipe';
 
 @NgModule({
   declarations: [
@@ -97,9 +102,12 @@ import { BookinmemoryService } from './mydemo/getmethod/bookinmemory.service';
     Child1communicationComponent,
     CameraappComponent,
     PhotosearchComponent,
-    GetmethodComponent
-
-
+    GetmethodComponent,
+    MrmissPipe,
+    WelcomePipe,
+    GreetingPipe,
+    BoldPipe,
+    ReversPipe
   ],
   imports: [
     BrowserModule,

@@ -38,17 +38,162 @@
     <div class="card">
       <div class="card-header bg-info text-white">pipes Example</div>
       <div class="card-body">
-        <p>Interpolation : {{name}}</p>
-        <P>uppercase : {{name |uppercase}}</P>
-        <p>lowercase : {{name |lowercase}}</p>
-        <p>titlecase : {{name |titlecase}}</p>
-        <p ngNonBindable> ngNonBindable : {{name |slice:5:7}}</p>
-        <p>slice 5 : {{name |slice:5}}</p>
-        <p>slice 5 to 9: {{name |slice:5:7}}</p>
-        <p>json pipe: {{family |json}}</p>
+        <p><strong class="text-success">Interpolation :</strong> {{name}}</p>
+        <P><strong class="text-success">uppercase : </strong> {{name |uppercase}}</P>
+        <p><strong class="text-success">lowercase : </strong> {{name |lowercase}}</p>
+        <p><strong class="text-success">titlecase :</strong> {{name |titlecase}}</p>
+        <p class="text-danger" ngNonBindable> ngNonBindable : {{name |slice:5:7}}</p>
+        <p><strong class="text-success">slice 5 :</strong> {{name |slice:5}}</p>
+        <p><strong class="text-success">slice 5 to 9: </strong>{{name |slice:5:7}}</p>
+        <p><strong class="text-success">json pipe:</strong> {{family |json}}</p>
+        <p>minIntegerDigits = 1
+          minFractionDigits = 0
+          maxFractionDigits = 3</p>
+        <p><strong class="text-success">Decimal Pipe 12.4678998754 Ans is =</strong> {{12.4678998754 |number}}</p>
+        <p><strong class="text-success">Decimal Pipe 12.4674998754 Ans is = </strong>{{12.4674998754 |number}}</p>
+        <p><strong class="text-success">Decimal Pipe 12.4674998754 Ans is =</strong> {{12.4674998754 |number:'3.2-5'}}
+        </p>
+        <p><strong class="text-success">Decimal Pipe 12.4674798754 Ans is =</strong> {{12.4674798754 |number:'3.2-5'}}
+        </p>
+        <p><strong class="text-success">Decimal Pipe 12.4674798754 Ans is = </strong>{{0.5 |number:'3.2-5'}}</p>
       </div>
 
       <div class="card-footer bg-info  text-white">Pipes always lowercase</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header bg-info text-white">Pipes</div>
+      <div class="card-body">
+        <p> <strong class="text-success">Percent Pipe 2.5 :</strong> {{2.5 |percent}}</p>
+        <p> <strong class="text-success">Percent Pipe 2.5 :</strong> {{2.5 |percent:'3.2-5'}}</p>
+        <p> <strong class="text-success">currency 5000 :</strong> {{5000 |currency}}</p>
+        <p> <strong class="text-success">currency 5000: </strong>{{5000 |currency:'USD'}}</p>
+        <p> <strong class="text-success">currency 5000 :</strong> {{5000 |currency:'INR'}}</p>
+        <p> <strong class="text-success">currency 5000 :</strong> {{5000 |currency:'GBP'}}</p>
+        <p> <strong class="text-success">currency 5000 : </strong>{{5000 |currency:'INR':true:'3.2-5'}}</p>
+      </div>
+
+      <div class="card-footer bg-info  text-white"></div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header bg-info text-white">pipes Example</div>
+      <div class="card-body">
+        <p><strong class="text-success"> Date:</strong> {{currentDate}}</p>
+        <p><strong class="text-success">Date date pipe:</strong> {{currentDate |date}}</p>
+        <p><strong class="text-success">Date shortDate pipe:</strong> {{currentDate |date :'shortDate'}}</p>
+        <p><strong class="text-success"> Date longDate pipe:</strong> {{currentDate |date :'longDate'}}</p>
+        <p><strong class="text-success">Date fullDate pipe:</strong> {{currentDate |date :'fullDate'}}</p>
+        <p><strong class="text-success">bday :</strong> {{bday}}</p>
+        <p><strong class="text-success">bday Date pipe:</strong> {{bday |date}}</p>
+        <p><strong class="text-success">bday chaning pipe:</strong> {{bday |date |uppercase}}</p>
+        <p><strong class="text-success">bday chaning pipe:</strong> {{bday |date:'dd/MM/yyyy' |uppercase}}</p>
+        <p><strong class="text-success">bday chaning pipe:</strong> {{bday |date:'dd-MM-yyyy' |uppercase}}</p>
+        <p><strong class="text-success">bday chaning pipe:</strong> {{predate |date:'dd-MM-yyyy' }}</p>
+        <p><strong class="text-success">bday chaning pipe:</strong> {{predate |date:'longDate' }}</p>
+      </div>
+
+      <div class="card-footer bg-info  text-white">Pipes always lowercase</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Custome Pipe</div>
+      <div class="card-body">
+        <div class="card">
+          <div class="card-body">MR Miss Pipe
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Gander</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let familylist of familylists">
+                <td>{{familylist.fname |titlecase|mrmiss:familylist.gender}} {{familylist.lname |titlecase}}</td>
+                <td>{{familylist.age }}</td>
+                <td>{{familylist.gender |uppercase}}</td>
+                <td>{{familylist.country |titlecase}}</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Custome Pipe</div>
+      <div class="card-body">
+        <div class="card">
+          <div class="card-body">Welcome Pipe
+          </div>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let familylist of familylists">
+                <td>{{familylist.fname |titlecase|welcome}}</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Custome Pipe
+      </div>
+      <div class="card-body">
+        <div class="card">
+          <div class="card-body">Morning Evening and Afternoon<br>
+          <p class="text-success">  {{currentDate |greeting}}</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">Bold Text<br>
+          <p class="text-success">  <span [innerHTML]="'somnath sumbe' | bold"></span></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">Revers<br>
+          <p class="text-success">{{'somnath'|revers}}</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
     </div>
   </div>
 </div>

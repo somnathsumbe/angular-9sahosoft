@@ -19,7 +19,7 @@ import {
 export class BookinmemoryService {
   // stap3 add url
   // stap4 find data types and create interface Books1
-  bookUrl = "https://jsonplaceholder.typicode.com/posts"
+  bookUrl = "https://demo8531792.mockable.io/getdata"
   // stap6 HttpClient
   constructor(private http: HttpClient) {
 
