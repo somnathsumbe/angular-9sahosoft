@@ -1,3 +1,6 @@
+<h1 class="visible">Visible</h1>
+<h1 class="invisible">non Visible</h1>
+
 <div class="row mt-3">
   <div class="col-md-6">
     <div class="card">
@@ -196,4 +199,28 @@
       <div class="card-footer bg-info text-white">Footer</div>
     </div>
   </div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-6">
+      <div class="card ">
+          <div class="card-header bg-info text-white">Custome Pipe</div>
+          <div class="card-body">
+<p><span class="text-success">Limit Word :</span> {{msg |limitword}}</p>
+<p><span class="text-success">Limit Word :</span> {{msg |limitword:30}}</p>
+<p><span class="text-success">Limit Word :</span> {{msg |limitword:40:'***'}}</p>
+          </div>
+          <div class="card-footer bg-info text-white">Footer</div>
+        </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <div class="card ">
+        <div class="card-header bg-info text-white">Header</div>
+        <div class="card-body">Content</div>
+        <div class="card-footer bg-info text-white">Footer</div>
+      </div>
+</div>
 </div>

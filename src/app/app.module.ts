@@ -55,6 +55,9 @@ import { WelcomePipe } from './pipes/welcome.pipe';
 import { GreetingPipe } from './pipes/greeting.pipe';
 import { BoldPipe } from './pipes/bold.pipe';
 import { ReversPipe } from './pipes/revers.pipe';
+import { LimitwordPipe } from './pipes/limitword.pipe';
+import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessionmenegment.component';
+import { ChecklocalstrogevalueComponent } from './localsession/checklocalstrogevalue/checklocalstrogevalue.component';
 
 @NgModule({
   declarations: [
@@ -107,7 +110,10 @@ import { ReversPipe } from './pipes/revers.pipe';
     WelcomePipe,
     GreetingPipe,
     BoldPipe,
-    ReversPipe
+    ReversPipe,
+    LimitwordPipe,
+    SessionmenegmentComponent,
+    ChecklocalstrogevalueComponent
   ],
   imports: [
     BrowserModule,

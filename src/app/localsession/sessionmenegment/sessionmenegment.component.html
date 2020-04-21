@@ -1,0 +1,59 @@
+<div class="card bg-info lead text-white text-center font-weight-bolder">
+    <div class="card-body">localStorage and sessionStorage</div>
+  </div>
+  
+
+<div class="row mt-3">
+    <div class="col-md-6">
+        <div class="card ">
+            <div class="card-header bg-info text-white">Header</div>
+            <div class="card-body">
+                <p> Last Key of Session : {{skey}} {{svalue}}</p>
+<p *ngFor="let sessionkeyvaluearray of sessionkeyvaluearray"> Each Key and Name : {{sessionkeyvaluearray}}</p>
+
+                <button type="button" class="btn btn-primary" (click)="support()">Local & Session Stroge Support?</button>
+                <button type="button" class="btn btn-success  ml-2" (click)="setData()">SetData</button>
+ 
+                <button type="button" class="btn btn-success  ml-2" (click)="sessionkeys()">Session Keys</button>
+
+                <hr>
+                <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td *ngIf="newgetobj && newgetobj.name  ;else  nodata">{{newgetobj.name}}</td>
+                        <ng-template #nodata>No Data Found </ng-template>
+                        <td *ngIf="newgetobj && newgetobj.age  ; else nodata">{{newgetobj.age}}</td>
+                        <ng-template #nodata>No Data Found </ng-template>
+                        <td *ngIf="newgetobj && newgetobj.mobile ;else  nodata" >{{newgetobj.mobile}}</td>
+                        <ng-template #nodata>No Data Found </ng-template>
+                        <td *ngIf="newgetobj && newgetobj.email ;else  nodata" >{{newgetobj.email}}</td>
+                        <ng-template #nodata>No Data Found </ng-template>
+
+
+
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="button" class="btn btn-success  ml-2" (click)="setobj()">Set Object</button> 
+                  <button type="button" class="btn btn-success  ml-2" (click)="getobj()">Get Object</button> 
+
+     
+            </div>
+            <div class="card-footer bg-info text-white">Footer</div>
+          </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card ">
+            <div class="card-header bg-info text-white">Header</div>
+            <div class="card-body">
+                <p class="lead">new component checklocalstrogevalue</p>
+
+                <app-checklocalstrogevalue></app-checklocalstrogevalue>
+                
+            </div>
+            <div class="card-footer bg-info text-white">Footer</div>
+          </div>
+    </div>
+</div>
+

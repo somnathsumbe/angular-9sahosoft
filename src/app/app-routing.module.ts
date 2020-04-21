@@ -21,6 +21,7 @@ import { Parent1communicationComponent } from './mydemo/@output/parent1communica
 import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
 import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component';
 import { GetmethodComponent } from './mydemo/getmethod/getmethod.component';
+import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessionmenegment.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: "ngstyle-ngclass", component: NgstyleNgclassComponent },
   { path: "stylebinding", component: StyleBindingComponent },
   { path: "app-pipes", component: PipesComponent }, 
+  { path: "lsstroge", component: SessionmenegmentComponent }, 
 
   //mydemo 
   { path: "templatedrivenform", component: TemplatedrivenformComponent },
