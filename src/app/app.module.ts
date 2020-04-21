@@ -58,6 +58,7 @@ import { ReversPipe } from './pipes/revers.pipe';
 import { LimitwordPipe } from './pipes/limitword.pipe';
 import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessionmenegment.component';
 import { ChecklocalstrogevalueComponent } from './localsession/checklocalstrogevalue/checklocalstrogevalue.component';
+import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component';
 
 @NgModule({
   declarations: [
@@ -113,7 +114,8 @@ import { ChecklocalstrogevalueComponent } from './localsession/checklocalstrogev
     ReversPipe,
     LimitwordPipe,
     SessionmenegmentComponent,
-    ChecklocalstrogevalueComponent
+    ChecklocalstrogevalueComponent,
+    JqueyimportComponent
   ],
   imports: [
     BrowserModule,

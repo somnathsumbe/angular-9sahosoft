@@ -22,6 +22,7 @@ import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
 import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component';
 import { GetmethodComponent } from './mydemo/getmethod/getmethod.component';
 import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessionmenegment.component';
+import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component';
 
 
 const routes: Routes = [
@@ -47,6 +48,7 @@ const routes: Routes = [
   { path: "Parentchild", component: MaininputoutputComponent },
   { path: "childparent", component: Parent1communicationComponent },
   { path: "getmethod", component: GetmethodComponent },
+  { path: "jquery", component: JqueyimportComponent },
 
   //maxmillion
   { path: "basic", component: BasicComponent },

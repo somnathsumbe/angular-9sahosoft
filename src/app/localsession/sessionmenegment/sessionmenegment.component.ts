@@ -3,6 +3,7 @@ import {
   OnInit
 } from '@angular/core';
 
+
 @Component({
   selector: 'app-sessionmenegment',
   templateUrl: './sessionmenegment.component.html',
@@ -22,7 +23,9 @@ export class SessionmenegmentComponent implements OnInit {
   }
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   support() {
 
