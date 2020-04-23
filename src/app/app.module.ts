@@ -62,6 +62,12 @@ import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component
 import { JesonmethodComponent } from './UXtreandz/jesonmethod/jesonmethod.component';
 import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.component';
 import { UxchildComponent } from './UXtreandz/lifecyclehook/uxchild/uxchild.component';
+import { CompsuubjectComponent } from './UXtreandz/SubjectandBehaviourSubject/compsuubject/compsuubject.component';
+import { Compsubchild1Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild1/compsubchild1.component';
+import { Compsubchild2Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild2/compsubchild2.component';
+import { Compsubchild3Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild3/compsubchild3.component';
+import { Compsubchild4Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild4/compsubchild4.component';
+import { SubjectService } from './UXtreandz/subject.service';
 
 @NgModule({
   declarations: [
@@ -121,7 +127,12 @@ import { UxchildComponent } from './UXtreandz/lifecyclehook/uxchild/uxchild.comp
     JqueyimportComponent,
     JesonmethodComponent,
     UxparentComponent,
-    UxchildComponent
+    UxchildComponent,
+    CompsuubjectComponent,
+    Compsubchild1Component,
+    Compsubchild2Component,
+    Compsubchild3Component,
+    Compsubchild4Component
   ],
   imports: [
     BrowserModule,
@@ -132,7 +143,7 @@ import { UxchildComponent } from './UXtreandz/lifecyclehook/uxchild/uxchild.comp
 
   ],
 
-  providers: [Hello,BookinmemoryService],
+  providers: [Hello,BookinmemoryService,SubjectService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

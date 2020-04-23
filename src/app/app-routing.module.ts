@@ -25,6 +25,7 @@ import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessi
 import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component';
 import { JesonmethodComponent } from './UXtreandz/jesonmethod/jesonmethod.component';
 import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.component';
+import { CompsuubjectComponent } from './UXtreandz/SubjectandBehaviourSubject/compsuubject/compsuubject.component';
 
 
 const routes: Routes = [
@@ -59,7 +60,7 @@ const routes: Routes = [
     //UX traedz
     { path: "json", component: JesonmethodComponent },
     { path: "lifecyclehook", component: UxparentComponent },
-
+    { path: "SubjectandBehaviour", component: CompsuubjectComponent },
 
     //Myapp
     { path: "camera", component: CameraappComponent },
