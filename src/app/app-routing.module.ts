@@ -23,6 +23,8 @@ import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component'
 import { GetmethodComponent } from './mydemo/getmethod/getmethod.component';
 import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessionmenegment.component';
 import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component';
+import { JesonmethodComponent } from './UXtreandz/jesonmethod/jesonmethod.component';
+import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.component';
 
 
 const routes: Routes = [
@@ -53,6 +55,11 @@ const routes: Routes = [
   //maxmillion
   { path: "basic", component: BasicComponent },
   { path: "recipes", component: MainrecipesComponent },
+
+    //UX traedz
+    { path: "json", component: JesonmethodComponent },
+    { path: "lifecyclehook", component: UxparentComponent },
+
 
     //Myapp
     { path: "camera", component: CameraappComponent },

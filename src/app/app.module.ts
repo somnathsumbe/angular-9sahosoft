@@ -59,6 +59,9 @@ import { LimitwordPipe } from './pipes/limitword.pipe';
 import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessionmenegment.component';
 import { ChecklocalstrogevalueComponent } from './localsession/checklocalstrogevalue/checklocalstrogevalue.component';
 import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component';
+import { JesonmethodComponent } from './UXtreandz/jesonmethod/jesonmethod.component';
+import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.component';
+import { UxchildComponent } from './UXtreandz/lifecyclehook/uxchild/uxchild.component';
 
 @NgModule({
   declarations: [
@@ -115,7 +118,10 @@ import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component
     LimitwordPipe,
     SessionmenegmentComponent,
     ChecklocalstrogevalueComponent,
-    JqueyimportComponent
+    JqueyimportComponent,
+    JesonmethodComponent,
+    UxparentComponent,
+    UxchildComponent
   ],
   imports: [
     BrowserModule,
