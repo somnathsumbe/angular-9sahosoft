@@ -26,6 +26,7 @@ import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component
 import { JesonmethodComponent } from './UXtreandz/jesonmethod/jesonmethod.component';
 import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.component';
 import { CompsuubjectComponent } from './UXtreandz/SubjectandBehaviourSubject/compsuubject/compsuubject.component';
+import { UxViewParentComponent } from './UXtreandz/ux-view-parent/ux-view-parent.component';
 
 
 const routes: Routes = [
@@ -61,7 +62,7 @@ const routes: Routes = [
     { path: "json", component: JesonmethodComponent },
     { path: "lifecyclehook", component: UxparentComponent },
     { path: "SubjectandBehaviour", component: CompsuubjectComponent },
-
+    { path: "@viewChild", component: UxViewParentComponent },
     //Myapp
     { path: "camera", component: CameraappComponent },
     { path: "photosearch", component: PhotosearchComponent },

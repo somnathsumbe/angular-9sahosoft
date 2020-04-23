@@ -68,6 +68,8 @@ import { Compsubchild2Component } from './UXtreandz/SubjectandBehaviourSubject/c
 import { Compsubchild3Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild3/compsubchild3.component';
 import { Compsubchild4Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild4/compsubchild4.component';
 import { SubjectService } from './UXtreandz/subject.service';
+import { UxViewParentComponent } from './UXtreandz/ux-view-parent/ux-view-parent.component';
+import { UxViewChildComponent } from './UXtreandz/ux-view-child/ux-view-child.component';
 
 @NgModule({
   declarations: [
@@ -132,7 +134,10 @@ import { SubjectService } from './UXtreandz/subject.service';
     Compsubchild1Component,
     Compsubchild2Component,
     Compsubchild3Component,
-    Compsubchild4Component
+    Compsubchild4Component,
+    UxViewParentComponent,
+    UxViewChildComponent,
+
   ],
   imports: [
     BrowserModule,
