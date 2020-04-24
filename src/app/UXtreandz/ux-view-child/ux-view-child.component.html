@@ -1,1 +1,8 @@
-<p>ux-view-child works!</p>
+<div class="form-group">
+  <label for="">Name : </label>
+  <input type="text"
+      class="form-control form-control-sm" #name>
+      <button class="btn-danger btn mt-2 float-lg-right" (click)="updateUsername(name)">Update</button>
+</div>
+
+Default Name :{{defaultname}}

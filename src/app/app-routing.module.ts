@@ -27,6 +27,7 @@ import { JesonmethodComponent } from './UXtreandz/jesonmethod/jesonmethod.compon
 import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.component';
 import { CompsuubjectComponent } from './UXtreandz/SubjectandBehaviourSubject/compsuubject/compsuubject.component';
 import { UxViewParentComponent } from './UXtreandz/ux-view-parent/ux-view-parent.component';
+import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.component';
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: "stylebinding", component: StyleBindingComponent },
   { path: "app-pipes", component: PipesComponent }, 
   { path: "lsstroge", component: SessionmenegmentComponent }, 
+  { path: "cookies", component: CookiesmainComponent }, 
 
   //mydemo 
   { path: "templatedrivenform", component: TemplatedrivenformComponent },

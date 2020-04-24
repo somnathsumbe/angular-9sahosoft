@@ -1,3 +1,37 @@
+
+
+<div class="row mt-3">
+  <div class="col-md-12">
+      <div class="card ">
+          <div class="card-header bg-info text-white">How to Import and Use jQuery in Angular</div>
+          <div class="card-body">
+
+            <ul class="list-group">
+              <li class="list-group-item ">install jQuery
+                First install jQuery using npm as follows
+                npm install jquery -- save</li>
+              <li class="list-group-item">Second go to the ./angular.json file at the root of your Angular CLI project folder, and find the scripts:
+                [] property, and include the path to jQuery as follows
+                "scripts": [ "./node_modules/jquery/dist/jquery.min.js" ]</li>
+              <li class="list-group-item">Use jQuery
+                Note: If you want to use bootstrap in your application or if you already have in your project, make
+                sure to include jQuery before including the bootstrap javascript file as follows. Since bootstrap’s
+                javascript file requires jQuery.</li>
+              <li class="list-group-item">"scripts": [ "./node_modules/jquery/dist/jquery.min.js",
+                "./node_modules/bootstrap/dist/js/bootstrap.js"]
+               After including jQuery stop running your Angular CLI application and then re run it using ng serve.</li>
+              <li class="list-group-item">Now to use jQuery, all you have to do is to import it as follows in whatever component you want to use
+                jQuery.
+                import * as $ from 'jquery';</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-info text-white">Footer</div>
+        </div>
+  </div>
+
+</div>
+
+
 <div class="row mt-3">
   <div class="col-md-4">
     <div class="card ">

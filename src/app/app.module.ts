@@ -70,6 +70,9 @@ import { Compsubchild4Component } from './UXtreandz/SubjectandBehaviourSubject/c
 import { SubjectService } from './UXtreandz/subject.service';
 import { UxViewParentComponent } from './UXtreandz/ux-view-parent/ux-view-parent.component';
 import { UxViewChildComponent } from './UXtreandz/ux-view-child/ux-view-child.component';
+import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.component';
+import { CookieschildComponent } from './Cookies/cookieschild/cookieschild.component';
+import {CookieService} from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -137,6 +140,8 @@ import { UxViewChildComponent } from './UXtreandz/ux-view-child/ux-view-child.co
     Compsubchild4Component,
     UxViewParentComponent,
     UxViewChildComponent,
+    CookiesmainComponent,
+    CookieschildComponent,
 
   ],
   imports: [
@@ -145,10 +150,11 @@ import { UxViewChildComponent } from './UXtreandz/ux-view-child/ux-view-child.co
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    
 
   ],
 
-  providers: [Hello,BookinmemoryService,SubjectService],
+  providers: [Hello,BookinmemoryService,SubjectService,CookieService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

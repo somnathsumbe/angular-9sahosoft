@@ -1,0 +1,12 @@
+<p>myname: {{cookies1}}</p>
+<p>mywife: {{cookies2}}</p>
+<ul class="list-group my-3" *ngFor="let shiv of shivanshobject">
+    <li class="list-group-item active">{{shiv.name}} {{shiv.age}} {{shiv.Dist}}</li>
+    <li class="list-group-item">{{shiv.name}} {{shiv.age}} {{shiv.Dist}}</li>
+    <li class="list-group-item disabled">{{shiv.name}} {{shiv.age}} {{shiv.Dist}}</li>
+</ul>
+
+<button type="button" class="btn btn-primary ml-2" (click)="GetCookies()">Get All Cookies</button>
+<button type="button" class="btn btn-primary ml-2" (click)="CheckCookies()">Check Cookies</button>
+<button type="button" class="btn btn-primary ml-2" (click)="setObject()">Set cookies Object</button>
+<button type="button" class="btn btn-primary ml-2" (click)="getObject()">Get cookies Object</button>

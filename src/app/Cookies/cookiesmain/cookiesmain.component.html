@@ -1,0 +1,84 @@
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-success text-white">Cookie</div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item ">A cookie is a small piece of data sent from a website and stored on the user's
+            machine by the user's web
+            browsers while the user is browsing.
+          </li>
+
+          <li class="list-group-item ">Cookies are small packages of information that are typically stored in your
+            browsers and websites tend to
+            use cookies for multiple things.
+          </li>
+          <li class="list-group-item ">Creating Cookies using ngx-cookie-service</li>
+          <li class="list-group-item">How to install a cookie
+            npm install --save ngx-cookie-service</li>
+          <li class="list-group-item ">cookie methods are<br>
+            1. Check – This method is used to check the cookie existing or not.<br>
+            2. Get - This method returns the value of given cookie name.<br>
+            3. GetAll - This method returns a value object with all the cookies<br>
+            4. Set – This method is used to set the cookies with a name.<br>
+            5. Delete – This method used to delete the cookie with the given name<br>
+            6. deleteAll – This method is used to delete all the cookies</li><br>
+        </ul>
+      </div>
+      <div class="card-footer bg-success text-white">Footer</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-success text-white">Discription</div>
+      <div class="card-body">
+        <ul class="list-group">
+
+          <li class="list-group-item "> We can Communicate Server to Client with help of Cookies </li>
+          <li class="list-group-item ">Cookies not used in angular now we have used new approch like JWT Tokes </li>
+          <li class="list-group-item ">cookes used same as local and session stroge but here data access or send from
+            client to server </li>
+          <li class="list-group-item ">auth is 3 party but it is not used for secure website like Bank ,insurance,
+            hospital but social site
+            we an used 3party authontication</li>
+          <li class="list-group-item ">Cookies is not safe </li>
+          <li class="list-group-item ">import CookieService from ngx-cookie-service in app.module.ts</li>
+          <li class="list-group-item ">CookieService  put into provider in app.module.ts </li>
+        </ul>
+      </div>
+      <div class="card-footer bg-success text-white">Footer</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Parent Component</div>
+      <div class="card-body">
+   <p> cookie1:    {{cookies1}}</p>
+   <p> cookie2:    {{cookies2}}</p>
+        <button type="button" class="btn btn-primary ml-2" (click)="setCookies()">Set Cookies</button>
+<button type="button" class="btn btn-primary ml-2" (click)="GetCookies()">Get All Cookies</button>
+
+<button type="button" class="btn btn-primary ml-2" (click)="delete()">Detele</button>
+<button type="button" class="btn btn-primary ml-2" (click)="deleteAll()">Delete All</button>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Child Component</div>
+      <div class="card-body">
+        <app-cookieschild></app-cookieschild>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+</div>
