@@ -6,7 +6,7 @@
   text-align: center;
 } */
 
-input.ng-invalid.ng-touched{
+input.ng-invalid.ng-touched,select.ng-invalid.ng-touched{
   border:  solid red;
 }
 /* input.ng-valid.ng-untouched{

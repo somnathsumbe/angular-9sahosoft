@@ -39,7 +39,7 @@
 
           <div class="col-md-12 p-0">
             <button type="submit" class="btn btn-primary mx-1 " [disabled]="!productsForm.valid"><i
-                class="fas fa-plus-square"></i> Add Product</button>
+                class="fas fa-plus-square"></i> {{editmode ?  'Update Product' : 'Add Product'   }}</button>
             <button type="button" class="btn btn-success mx-1 " (click)="onSaveProduct()"><i class="fas fa-save"></i>
               Save Product</button>
             <button type="button" class="btn btn-warning mx-1 text-white " (click)="onFeachProduct()"><i
@@ -74,7 +74,7 @@
               <td>{{product.name | titlecase}}</td>
               <td>{{product.price |currency:'INR'}}</td>
               <td class="text-danger">
-                <button type="button" class="btn btn-link  text-danger"><i class="fas fa-user-edit"></i></button>
+                <button type="button" class="btn btn-link  text-danger" (click)="onEditProduct(i)"><i class="fas fa-user-edit"></i></button>
               </td>
               <td class="text-danger">
                 <button type="button" class="btn btn-link  text-danger" (click)="onDeleteProduct(i)"><i

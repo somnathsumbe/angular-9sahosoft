@@ -76,6 +76,7 @@ import {CookieService} from 'ngx-cookie-service';
 import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactus.component';
 import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
 import { UxproductsService } from './UXtreandz/firebase/appServices/uxproducts.service';
+import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -147,6 +148,7 @@ import { UxproductsService } from './UXtreandz/firebase/appServices/uxproducts.s
     CookieschildComponent,
     ContactusComponent,
     FirebasecardComponent,
+    UxtempDrivenFormComponent,
 
   ],
   imports: [

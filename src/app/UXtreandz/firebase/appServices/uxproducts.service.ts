@@ -35,10 +35,19 @@ export class UxproductsService {
     return this._http.get(this.urlDataTitle);
   }
 
-
+  onEditProduct(id) {
+    console.log('https://uxproduct-558b4.firebaseio.com/products/'+id+'.json');
+        return this._http.delete('https://uxproduct-558b4.firebaseio.com/products/'+id+'.json');
+      }
   deleteProduct(id) {
 console.log('https://uxproduct-558b4.firebaseio.com/products/'+id+'.json');
     return this._http.delete('https://uxproduct-558b4.firebaseio.com/products/'+id+'.json');
   }
 
+
+  updateProduct(id) {
+    console.log('https://uxproduct-558b4.firebaseio.com/products/'+id+'.json');
+        return this._http.delete('https://uxproduct-558b4.firebaseio.com/products/'+id+'.json');
+      }
+    
 }

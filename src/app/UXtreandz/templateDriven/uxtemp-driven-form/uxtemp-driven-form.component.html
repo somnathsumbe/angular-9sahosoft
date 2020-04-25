@@ -1,0 +1,44 @@
+<h1 class="text-center  text-success display-4">
+contact us
+</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ullam dolore minus pariatur ab. Quas harum molestiae
+  assumenda consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt. sapiente quia dolor veritatis aut deserunt placeat animi ea, labore pariatur.</p>
+<div class="row mt-3">
+  <div class="col-md-6 offset-3 shadow py-3 ">
+    <div class="card ">
+      <!-- <div class="card-header bg-info text-white">Contact Form</div> -->
+      <div class="card-body">
+        <form #myform="ngForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="">User Name * </label>
+            <input type="text" class="form-control" #username="ngModel"  ngModel name="username" id="username" aria-describedby="helpId"
+              placeholder="Enter username" required>
+              <small id="helpId" class="form-text text-danger" *ngIf="!username.valid && username.touched">Enter username</small>
+          </div>
+
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" class="form-control" #email="ngModel" ngModel name="email" id="email" aria-describedby="helpId"
+              placeholder="Enter email" required>
+            <small id="helpId" class="form-text text-danger" *ngIf="!email.valid && email.touched">Enter valid Email</small>
+          </div>
+
+          <div class="form-group">
+            <label for="">Select Course</label>
+            <select class="form-control" name="course" id="course"  [ngModel]="selectDefault" required>
+              <option value="javascript" selected> javascript</option>
+              <option value="html"> html</option>
+              <option value="css"> css</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-success" [disabled]="!myform.valid">Submit</button>
+
+
+        </form>
+
+      </div>
+      <!-- <div class="card-footer bg-info text-white">Footer</div> -->
+    </div>
+  </div>
+</div>

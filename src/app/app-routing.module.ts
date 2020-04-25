@@ -30,6 +30,7 @@ import { UxViewParentComponent } from './UXtreandz/ux-view-parent/ux-view-parent
 import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.component';
 import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactus.component';
 import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
+import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
 
 
 const routes: Routes = [
@@ -67,6 +68,7 @@ const routes: Routes = [
     { path: "lifecyclehook", component: UxparentComponent },
     { path: "SubjectandBehaviour", component: CompsuubjectComponent },
     { path: "@viewChild", component: UxViewParentComponent },
+    { path: "uxtempdriven", component: UxtempDrivenFormComponent },
     { path: "uxcontact", component: ContactusComponent },
     { path: "uxfirebase", component: FirebasecardComponent },
 
