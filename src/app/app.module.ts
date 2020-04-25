@@ -44,26 +44,14 @@ import { LimitwordPipe } from './pipes/limitword.pipe';
 import { SessionmenegmentComponent } from './localsession/sessionmenegment/sessionmenegment.component';
 import { ChecklocalstrogevalueComponent } from './localsession/checklocalstrogevalue/checklocalstrogevalue.component';
 import { JqueyimportComponent } from './mydemo/jqueyimport/jqueyimport.component';
-import { JesonmethodComponent } from './UXtreandz/jesonmethod/jesonmethod.component';
-import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.component';
-import { UxchildComponent } from './UXtreandz/lifecyclehook/uxchild/uxchild.component';
-import { CompsuubjectComponent } from './UXtreandz/SubjectandBehaviourSubject/compsuubject/compsuubject.component';
-import { Compsubchild1Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild1/compsubchild1.component';
-import { Compsubchild2Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild2/compsubchild2.component';
-import { Compsubchild3Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild3/compsubchild3.component';
-import { Compsubchild4Component } from './UXtreandz/SubjectandBehaviourSubject/compsubchild4/compsubchild4.component';
 import { SubjectService } from './UXtreandz/subject.service';
-import { UxViewParentComponent } from './UXtreandz/ux-view-parent/ux-view-parent.component';
-import { UxViewChildComponent } from './UXtreandz/ux-view-child/ux-view-child.component';
 import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.component';
 import { CookieschildComponent } from './Cookies/cookieschild/cookieschild.component';
 import {CookieService} from 'ngx-cookie-service';
-import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactus.component';
-import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
 import { UxproductsService } from './UXtreandz/firebase/appServices/uxproducts.service';
-import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
 import { MyappModule } from './MyApp/myapp.module';
 import { MaxmillionModule } from './maxmillion/maxmillion.module';
+import { UxtreandzModule } from './UXtreandz/uxtreandz.module';
 
 @NgModule({
   declarations: [
@@ -109,22 +97,8 @@ import { MaxmillionModule } from './maxmillion/maxmillion.module';
     SessionmenegmentComponent,
     ChecklocalstrogevalueComponent,
     JqueyimportComponent,
-    JesonmethodComponent,
-    UxparentComponent,
-    UxchildComponent,
-    CompsuubjectComponent,
-    Compsubchild1Component,
-    Compsubchild2Component,
-    Compsubchild3Component,
-    Compsubchild4Component,
-    UxViewParentComponent,
-    UxViewChildComponent,
     CookiesmainComponent,
     CookieschildComponent,
-    ContactusComponent,
-    FirebasecardComponent,
-    UxtempDrivenFormComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -133,7 +107,8 @@ import { MaxmillionModule } from './maxmillion/maxmillion.module';
     AppRoutingModule,
     HttpClientModule,
     MyappModule,
-    MaxmillionModule
+    MaxmillionModule,
+    UxtreandzModule
     
 
   ],
