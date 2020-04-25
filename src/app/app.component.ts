@@ -7,7 +7,7 @@ import { Myenum } from './myenum';
 
 class abc {
   constructor() {
-    console.log("abc constractor");
+    // console.log("abc constractor");
   }
   x = "abc variable";
 }
@@ -17,7 +17,7 @@ class xyz {
   y = "xyz variable";
 
   show(name: string) {
-    console.log("hello " + name);
+    // console.log("hello " + name);
   }
 }
 @Component({
@@ -36,10 +36,10 @@ export class AppComponent {
 
 
   constructor(public abc: abc, public xyz: xyz, public hello: Hello) {
-    console.log(abc.x);
-    console.log(xyz.y);
+    // console.log(abc.x);
+    // console.log(xyz.y);
     xyz.show("somnath");
-    console.log(hello.c);
+    // console.log(hello.c);
 
 
 
