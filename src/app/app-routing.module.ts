@@ -31,58 +31,56 @@ import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.componen
 import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactus.component';
 import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
 import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
-
-
 const routes: Routes = [
-  // when application start open this component or default route redireacting route
-  //class demo
-  { path: "", redirectTo: "/firstclass", pathMatch: "full" },
-  { path: "firstclass", component: FirstclassComponent },
-  { path: "secondclass", component: SecondclassComponent },
-  { path: "forthclass", component: ForthclassComponent },
-  { path: "directive", component: DirectiveComponent },
-  { path: "maincomponent", component: MaincomponentComponent },
-  { path: "parentcomunication1", component: Parentcomunication1Component },
-  { path: "asyncexample", component: AsyncexampleComponent },
-  { path: "ngstyle-ngclass", component: NgstyleNgclassComponent },
-  { path: "stylebinding", component: StyleBindingComponent },
-  { path: "app-pipes", component: PipesComponent }, 
-  { path: "lsstroge", component: SessionmenegmentComponent }, 
-  { path: "cookies", component: CookiesmainComponent }, 
+// when application start open this component or default route redireacting route
+//class demo
+{ path: "", redirectTo: "/firstclass", pathMatch: "full" },
+{ path: "firstclass", component: FirstclassComponent },
+{ path: "secondclass", component: SecondclassComponent },
+{ path: "forthclass", component: ForthclassComponent },
+{ path: "directive", component: DirectiveComponent },
+{ path: "maincomponent", component: MaincomponentComponent },
+{ path: "parentcomunication1", component: Parentcomunication1Component },
+{ path: "asyncexample", component: AsyncexampleComponent },
+{ path: "ngstyle-ngclass", component: NgstyleNgclassComponent },
+{ path: "stylebinding", component: StyleBindingComponent },
+{ path: "app-pipes", component: PipesComponent },
+{ path: "lsstroge", component: SessionmenegmentComponent },
+{ path: "cookies", component: CookiesmainComponent },
 
-  //mydemo 
-  { path: "templatedrivenform", component: TemplatedrivenformComponent },
-  { path: "reactiveform", component: ReactiveformComponent },
-  { path: "viewchild", component: ViewchildmainpageComponent },
-  { path: "Parentchild", component: MaininputoutputComponent },
-  { path: "childparent", component: Parent1communicationComponent },
-  { path: "getmethod", component: GetmethodComponent },
-  { path: "jquery", component: JqueyimportComponent },
+//mydemo
+{ path: "templatedrivenform", component: TemplatedrivenformComponent },
+{ path: "reactiveform", component: ReactiveformComponent },
+{ path: "viewchild", component: ViewchildmainpageComponent },
+{ path: "Parentchild", component: MaininputoutputComponent },
+{ path: "childparent", component: Parent1communicationComponent },
+{ path: "getmethod", component: GetmethodComponent },
+{ path: "jquery", component: JqueyimportComponent },
 
-  //maxmillion
-  { path: "basic", component: BasicComponent },
-  { path: "recipes", component: MainrecipesComponent },
+//maxmillion
+{ path: "basic", component: BasicComponent },
+{ path: "recipes", component: MainrecipesComponent },
 
-    //UX traedz
-    { path: "json", component: JesonmethodComponent },
-    { path: "lifecyclehook", component: UxparentComponent },
-    { path: "SubjectandBehaviour", component: CompsuubjectComponent },
-    { path: "@viewChild", component: UxViewParentComponent },
-    { path: "uxtempdriven", component: UxtempDrivenFormComponent },
-    { path: "uxcontact", component: ContactusComponent },
-    { path: "uxfirebase", component: FirebasecardComponent },
+//UX traedz
+{ path: "json", component: JesonmethodComponent },
+{ path: "lifecyclehook", component: UxparentComponent },
+{ path: "SubjectandBehaviour", component: CompsuubjectComponent },
+{ path: "@viewChild", component: UxViewParentComponent },
+{ path: "uxtempdriven", component: UxtempDrivenFormComponent },
+{ path: "uxcontact", component: ContactusComponent },
+{ path: "uxfirebase", component: FirebasecardComponent },
 
-    //Myapp  
-    { path: "camera", component: CameraappComponent },
-    { path: "photosearch", component: PhotosearchComponent },
+//Myapp
+{ path: "camera", component: CameraappComponent },
+{ path: "photosearch", component: PhotosearchComponent },
 
 
-  //wildcart route its always used last if page not in appl then this page will show
-  { path: "**", component: PagenotfoundComponent },
+//wildcart route its always used last if page not in appl then this page will show
+{ path: "**", component: PagenotfoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+imports: [RouterModule.forRoot(routes)],
+exports: [RouterModule],
 })
 export class AppRoutingModule {}

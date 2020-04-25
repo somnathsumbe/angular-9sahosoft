@@ -26,19 +26,6 @@ import { HeaderComponent } from "./header/header.component";
 import { PagenotfoundComponent } from "./pagenotfound/pagenotfound.component";
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { BasicComponent } from './maxmillion/basic/basic.component';
-import { ServersComponent } from './maxmillion/servers/servers.component';
-import { ServerComponent } from './maxmillion/server/server.component';
-import { Assigment1Component } from './maxmillion/assigment1/assigment1.component';
-import { Assigment2Component } from './maxmillion/assigment2/assigment2.component';
-import { MainrecipesComponent } from './maxmillion/recipibookproject/mainrecipes/mainrecipes.component';
-import { RecipesheaderComponent } from './maxmillion/recipibookproject/mainrecipes/recipesheader/recipesheader.component';
-import { RecipesComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipes.component';
-import { RecipeListComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './maxmillion/recipibookproject/mainrecipes/recipes/recipe-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './maxmillion/recipibookproject/mainrecipes/shopping-list/shopping-edit/shopping-edit.component';
 import { ViewchildmainpageComponent } from './mydemo/viewchilddemo/viewchildmainpage/viewchildmainpage.component';
 import { CounterChildComponent } from './mydemo/viewchilddemo/counter-child/counter-child.component';
 import { CounterParentComponent } from './mydemo/viewchilddemo/counter-parent/counter-parent.component';
@@ -46,8 +33,6 @@ import { MaininputoutputComponent } from './mydemo/@input@output/maininputoutput
 import { Child1Component } from './mydemo/@input@output/child1/child1.component';
 import { Parent1communicationComponent } from './mydemo/@output/parent1communication/parent1communication.component';
 import { Child1communicationComponent } from './mydemo/@output/child1communication/child1communication.component';
-import { CameraappComponent } from './MyApp/cameraapp/cameraapp.component';
-import { PhotosearchComponent } from './MyApp/photosearch/photosearch.component';
 import { GetmethodComponent } from './mydemo/getmethod/getmethod.component';
 import { BookinmemoryService } from './mydemo/getmethod/bookinmemory.service';
 import { MrmissPipe } from './pipes/mrmiss.pipe';
@@ -77,6 +62,8 @@ import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactu
 import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
 import { UxproductsService } from './UXtreandz/firebase/appServices/uxproducts.service';
 import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
+import { MyappModule } from './MyApp/myapp.module';
+import { MaxmillionModule } from './maxmillion/maxmillion.module';
 
 @NgModule({
   declarations: [
@@ -102,19 +89,9 @@ import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-dri
     PagenotfoundComponent,
     StyleBindingComponent,
     PipesComponent,
-    BasicComponent,
-    ServersComponent,
-    ServerComponent,
-    Assigment1Component,
-    Assigment2Component,
-    MainrecipesComponent,
-    RecipesheaderComponent,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent,
+    
+ 
+
     ViewchildmainpageComponent,
     CounterChildComponent,
     CounterParentComponent,
@@ -122,8 +99,6 @@ import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-dri
     Child1Component,
     Parent1communicationComponent,
     Child1communicationComponent,
-    CameraappComponent,
-    PhotosearchComponent,
     GetmethodComponent,
     MrmissPipe,
     WelcomePipe,
@@ -157,6 +132,8 @@ import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-dri
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
+    MyappModule,
+    MaxmillionModule
     
 
   ],

@@ -8,6 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class Assigment2Component implements OnInit {
   currentDate = new Date();
   pushDate: any = [];
+  static ServersComponent: any[];
   constructor() {}
 
   ngOnInit(): void {}
