@@ -28,6 +28,8 @@ import { UxparentComponent } from './UXtreandz/lifecyclehook/uxparent/uxparent.c
 import { CompsuubjectComponent } from './UXtreandz/SubjectandBehaviourSubject/compsuubject/compsuubject.component';
 import { UxViewParentComponent } from './UXtreandz/ux-view-parent/ux-view-parent.component';
 import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.component';
+import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactus.component';
+import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
 
 
 const routes: Routes = [
@@ -65,7 +67,10 @@ const routes: Routes = [
     { path: "lifecyclehook", component: UxparentComponent },
     { path: "SubjectandBehaviour", component: CompsuubjectComponent },
     { path: "@viewChild", component: UxViewParentComponent },
-    //Myapp
+    { path: "uxcontact", component: ContactusComponent },
+    { path: "uxfirebase", component: FirebasecardComponent },
+
+    //Myapp  
     { path: "camera", component: CameraappComponent },
     { path: "photosearch", component: PhotosearchComponent },
 

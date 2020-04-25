@@ -73,6 +73,9 @@ import { UxViewChildComponent } from './UXtreandz/ux-view-child/ux-view-child.co
 import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.component';
 import { CookieschildComponent } from './Cookies/cookieschild/cookieschild.component';
 import {CookieService} from 'ngx-cookie-service';
+import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactus.component';
+import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
+import { UxproductsService } from './UXtreandz/firebase/appServices/uxproducts.service';
 
 @NgModule({
   declarations: [
@@ -142,6 +145,8 @@ import {CookieService} from 'ngx-cookie-service';
     UxViewChildComponent,
     CookiesmainComponent,
     CookieschildComponent,
+    ContactusComponent,
+    FirebasecardComponent,
 
   ],
   imports: [
@@ -154,7 +159,7 @@ import {CookieService} from 'ngx-cookie-service';
 
   ],
 
-  providers: [Hello,BookinmemoryService,SubjectService,CookieService],
+  providers: [Hello,BookinmemoryService,SubjectService,CookieService,UxproductsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

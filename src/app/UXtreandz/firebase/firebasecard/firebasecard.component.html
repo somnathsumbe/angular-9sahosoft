@@ -1,0 +1,95 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card mt-3 lead font-weight-bold text-center bg-info text-white font-italic">
+      <div class="card-body">Manage Products</div>
+    </div>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-md-5">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Add Products</div>
+      <div class="card-body">
+        <form action="" [formGroup]="productsForm" (ngSubmit)="onAddProduct()">
+          <div class="form-group">
+            <label for="">Product Id </label>
+            <input type="text" class="form-control" name="id" id="id" formControlName="id" aria-describedby="helpId"
+              placeholder="Enter Product Id ...">
+            <span class="help-block text-danger"
+              *ngIf="productsForm.get('id').invalid && productsForm.get('id').touched"> Enter Product Id ...</span>
+          </div>
+
+          <div class="form-group">
+            <label for="">Product Name </label>
+            <input type="text" class="form-control" name="name" id="name" formControlName="name"
+              aria-describedby="helpId" placeholder="Enter Product Name ...">
+            <span class="help-block text-danger"
+              *ngIf="productsForm.get('name').invalid && productsForm.get('name').touched">Enter Product Name ...
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label for="">Product Price </label>
+            <input type="text" class="form-control" name="price" id="price" formControlName="price"
+              aria-describedby="helpId" placeholder="EnterProduct Price ...">
+            <span class="help-block text-danger"
+              *ngIf="productsForm.get('price').invalid && productsForm.get('price').touched">Enter Product Price
+              ...</span>
+          </div>
+
+          <div class="col-md-12 p-0">
+            <button type="submit" class="btn btn-primary mx-1 " [disabled]="!productsForm.valid"><i
+                class="fas fa-plus-square"></i> Add Product</button>
+            <button type="button" class="btn btn-success mx-1 " (click)="onSaveProduct()"><i class="fas fa-save"></i>
+              Save Product</button>
+            <button type="button" class="btn btn-warning mx-1 text-white " (click)="onFeachProduct()"><i
+                class="fas fa-cloud-download-alt"></i> Fetch Product</button>
+          </div>
+        </form>
+
+      </div>
+      <!-- <div class="card-footer bg-info text-white">Footer</div> -->
+    </div>
+  </div>
+
+  <div class="col-md-7">
+    <div class="card ">
+      <div class="card-header bg-info text-white">{{dataTitle | async}}</div>
+      <div class="card-body">
+        <table *ngIf="!feaching" class="table table-bordered table-sm">
+          <thead class="bg-success text-white ">
+            <tr>
+              <th>#</th>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products; let i= index">
+              <td>{{i+1}}</td>
+              <td>{{product.id}}</td>
+              <td>{{product.name | titlecase}}</td>
+              <td>{{product.price |currency:'INR'}}</td>
+              <td class="text-danger">
+                <button type="button" class="btn btn-link  text-danger"><i class="fas fa-user-edit"></i></button>
+              </td>
+              <td class="text-danger">
+                <button type="button" class="btn btn-link  text-danger" (click)="onDeleteProduct(i)"><i
+                    class="fas fa-trash-alt"></i></button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+        <div *ngIf="feaching" class="text-center text-success font-weight-lighter">
+          <span class="spinner-border text-primary"></span>
+          Feaching Products
+        </div>
+      </div>
+      <!-- <div class="card-footer bg-info text-white">Footer</div> -->
+    </div>
+  </div>
+</div>
