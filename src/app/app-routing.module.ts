@@ -31,6 +31,8 @@ import { CookiesmainComponent } from './Cookies/cookiesmain/cookiesmain.componen
 import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactus.component';
 import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
 import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
+import { ContentuseComponent } from './UXtreandz/contentuse/contentuse.component';
+
 const routes: Routes = [
 // when application start open this component or default route redireacting route
 //class demo
@@ -49,7 +51,7 @@ const routes: Routes = [
 { path: "cookies", component: CookiesmainComponent },
 
 //mydemo
-{ path: "templatedrivenform", component: TemplatedrivenformComponent },
+{ path: "UxtreandzModule", component: TemplatedrivenformComponent },
 { path: "reactiveform", component: ReactiveformComponent },
 { path: "viewchild", component: ViewchildmainpageComponent },
 { path: "Parentchild", component: MaininputoutputComponent },
@@ -69,6 +71,7 @@ const routes: Routes = [
 { path: "uxtempdriven", component: UxtempDrivenFormComponent },
 { path: "uxcontact", component: ContactusComponent },
 { path: "uxfirebase", component: FirebasecardComponent },
+{ path: "uxcontent", component: ContentuseComponent },
 
 //Myapp
 { path: "camera", component: CameraappComponent },

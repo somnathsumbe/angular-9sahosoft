@@ -15,6 +15,8 @@ import { FirebasecardComponent } from './firebase/firebasecard/firebasecard.comp
 import { UxtempDrivenFormComponent } from './templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContentuseComponent } from './contentuse/contentuse.component';
+import { CardComponent } from './contentuse/card/card.component';
 
 
 
@@ -33,6 +35,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactusComponent,
     FirebasecardComponent,
     UxtempDrivenFormComponent,
+    ContentuseComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
