@@ -17,6 +17,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContentuseComponent } from './contentuse/contentuse.component';
 import { CardComponent } from './contentuse/card/card.component';
+import { CurdComponent } from './firebaseposmethod/curd/curd.component';
 
 
 
@@ -37,6 +38,7 @@ import { CardComponent } from './contentuse/card/card.component';
     UxtempDrivenFormComponent,
     ContentuseComponent,
     CardComponent,
+    CurdComponent,
   ],
   imports: [
     CommonModule,

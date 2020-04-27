@@ -33,6 +33,7 @@ import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebas
 import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
 import { ContentuseComponent } from './UXtreandz/contentuse/contentuse.component';
 import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.component';
+import { CurdComponent } from './UXtreandz/firebaseposmethod/curd/curd.component';
 
 const routes: Routes = [
 // when application start open this component or default route redireacting route
@@ -73,8 +74,9 @@ const routes: Routes = [
 { path: "uxcontact", component: ContactusComponent },
 { path: "uxfirebase", component: FirebasecardComponent },
 { path: "uxcontent", component: ContentuseComponent },
+{ path: "firebasecurdpostmethod", component: CurdComponent },
 
-//Myapp
+//Myapp 
 { path: "camera", component: CameraappComponent },
 { path: "photosearch", component: PhotosearchComponent },
 
