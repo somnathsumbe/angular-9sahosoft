@@ -34,7 +34,7 @@ class xyz {
 })
 export class AppComponent {
 
-
+loadedFeature='recipe';
   constructor(public abc: abc, public xyz: xyz, public hello: Hello) {
     // console.log(abc.x);
     // console.log(xyz.y);
@@ -75,4 +75,7 @@ export class AppComponent {
   //   alert("Hi host click ");
   // }
 
+  onNavigate(feature:string){
+this.loadedFeature=feature;
+  }
 }

@@ -32,6 +32,7 @@ import { ContactusComponent } from './UXtreandz/reactiveForms/contactus/contactu
 import { FirebasecardComponent } from './UXtreandz/firebase/firebasecard/firebasecard.component';
 import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-driven-form/uxtemp-driven-form.component';
 import { ContentuseComponent } from './UXtreandz/contentuse/contentuse.component';
+import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.component';
 
 const routes: Routes = [
 // when application start open this component or default route redireacting route
@@ -49,8 +50,8 @@ const routes: Routes = [
 { path: "app-pipes", component: PipesComponent },
 { path: "lsstroge", component: SessionmenegmentComponent },
 { path: "cookies", component: CookiesmainComponent },
-
-//mydemo
+{ path: "input()Output()", component: ParentcomComponent },
+//mydemo  
 { path: "UxtreandzModule", component: TemplatedrivenformComponent },
 { path: "reactiveform", component: ReactiveformComponent },
 { path: "viewchild", component: ViewchildmainpageComponent },

@@ -1,0 +1,29 @@
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Parent Component</div>
+      <div class="card-body">
+        <div class="form-group">
+          <input type="text" class="form-control" #pcomponent (keyup)="0">
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="border p-3 lead ">Value of Child component is :  <span class="text-success font-weight-bold">{{cdata}}</span></p>
+            </div>
+          </div>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Child Component</div>
+      <div class="card-body">
+        <app-childcom [parentcomponenttextbox]="pcomponent.value" (childevent)="mydata($event)"></app-childcom>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+</div>

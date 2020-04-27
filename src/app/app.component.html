@@ -50,7 +50,7 @@ India: {{company ? company.country : "No Data Found" }} -->
  </ng-template> -->
 
 
-<app-header></app-header>
+<app-header (freatureSelected)="onNavigate('$event')"></app-header>
 <div class="container-fluid">
   <router-outlet></router-outlet>
 </div>

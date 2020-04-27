@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-body">
+        <p class="border p-3 lead ">Value of parent component is :  <span class="text-success font-weight-bold">{{pdata}}</span></p>
+    </div>
+  </div>
+
+<br>
+  <input type="text" class="form-control" #ccompo (keyup)="mychilddata(ccompo.value)">
+  

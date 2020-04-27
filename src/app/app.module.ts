@@ -52,6 +52,8 @@ import { UxproductsService } from './UXtreandz/firebase/appServices/uxproducts.s
 import { MyappModule } from './MyApp/myapp.module';
 import { MaxmillionModule } from './maxmillion/maxmillion.module';
 import { UxtreandzModule } from './UXtreandz/uxtreandz.module';
+import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.component';
+import { ChildcomComponent } from './@Input()Output()/childcom/childcom.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +101,8 @@ import { UxtreandzModule } from './UXtreandz/uxtreandz.module';
     JqueyimportComponent,
     CookiesmainComponent,
     CookieschildComponent,
+    ParentcomComponent,
+    ChildcomComponent,
   ],
   imports: [
     BrowserModule,
