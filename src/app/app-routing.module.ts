@@ -34,6 +34,8 @@ import { UxtempDrivenFormComponent } from './UXtreandz/templateDriven/uxtemp-dri
 import { ContentuseComponent } from './UXtreandz/contentuse/contentuse.component';
 import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.component';
 import { CurdComponent } from './UXtreandz/firebaseposmethod/curd/curd.component';
+import { TsbasicComponent } from './TypeScriptProg/tsbasic/tsbasic.component';
+import { Es6Component } from './TypeScriptProg/es6/es6.component';
 
 const routes: Routes = [
 // when application start open this component or default route redireacting route
@@ -80,10 +82,18 @@ const routes: Routes = [
 { path: "camera", component: CameraappComponent },
 { path: "photosearch", component: PhotosearchComponent },
 
+//TypeScript 
+{ path: "TypeScriptbasic", component: TsbasicComponent },
+{ path: "es6", component: Es6Component },
+
+
 
 //wildcart route its always used last if page not in appl then this page will show
 { path: "**", component: PagenotfoundComponent },
 ];
+
+
+
 
 @NgModule({
 imports: [RouterModule.forRoot(routes)],

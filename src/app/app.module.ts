@@ -54,6 +54,7 @@ import { MaxmillionModule } from './maxmillion/maxmillion.module';
 import { UxtreandzModule } from './UXtreandz/uxtreandz.module';
 import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.component';
 import { ChildcomComponent } from './@Input()Output()/childcom/childcom.component';
+import { TstutorialsModule } from './TypeScriptProg/tstutorials.module';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { ChildcomComponent } from './@Input()Output()/childcom/childcom.componen
     HttpClientModule,
     MyappModule,
     MaxmillionModule,
-    UxtreandzModule
+    UxtreandzModule,
+    TstutorialsModule
     
 
   ],
