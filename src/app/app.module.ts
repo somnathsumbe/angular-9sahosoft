@@ -55,6 +55,12 @@ import { UxtreandzModule } from './UXtreandz/uxtreandz.module';
 import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.component';
 import { ChildcomComponent } from './@Input()Output()/childcom/childcom.component';
 import { TstutorialsModule } from './TypeScriptProg/tstutorials.module';
+import { NgcontentComponent } from './ngcontent/ngcontent.component';
+import { ChangecolorDirective } from './mydemo/viewchilddemo/changecolor.directive';
+import { ParentcolorComponent } from './mydemo/viewchilddemo/parentcolor/parentcolor.component';
+import { ThemeComponent } from './mydemo/viewchilddemo/theme/theme.component';
+import { Theme1Component } from './mydemo/viewchilddemo/theme1/theme1.component';
+import { Parentcolor1Component } from './mydemo/viewchilddemo/parentcolor1/parentcolor1.component';
 
 @NgModule({
   declarations: [
@@ -104,6 +110,12 @@ import { TstutorialsModule } from './TypeScriptProg/tstutorials.module';
     CookieschildComponent,
     ParentcomComponent,
     ChildcomComponent,
+    NgcontentComponent,
+    ChangecolorDirective,
+    ParentcolorComponent,
+    ThemeComponent,
+    Theme1Component,
+    Parentcolor1Component,
   ],
   imports: [
     BrowserModule,

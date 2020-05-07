@@ -5,36 +5,101 @@
       <div class="card-body">
 
         <ul class="list-group">
-            <li class="list-group-item"> create parent child component</li>
-            <li class="list-group-item">app-counter-child (child component)</li>
-            <li class="list-group-item">app-counter-parent (Parent component)</li>
-            <li class="list-group-item">viewchildmainpage (main component)</li>
-            <li class="list-group-item">child class declaraton to parent & parent to main</li>
-            <li class="list-group-item">access child component (app-counter-child) method to parent component (app-counter-parent)
-                add refarance to parent component.ts file</li>
-            <li class="list-group-item" ngNonBindable>import view child : {{import { Component, OnInit, ViewChild } from "@angular/core";}}</li>
-            <li class="list-group-item" ngNonBindable>add ref od child componet {{@ViewChild(CounterChildComponent, { static: true })
+          <li class="list-group-item"> create parent child component</li>
+          <li class="list-group-item">app-counter-child (child component)</li>
+          <li class="list-group-item">app-counter-parent (Parent component)</li>
+          <li class="list-group-item">viewchildmainpage (main component)</li>
+          <li class="list-group-item">child class declaraton to parent & parent to main</li>
+          <li class="list-group-item">access child component (app-counter-child) method to parent component
+            (app-counter-parent)
+            add refarance to parent component.ts file</li>
+          <li class="list-group-item" ngNonBindable>import view child :
+            {{import { Component, OnInit, ViewChild } from "@angular/core";}}</li>
+          <li class="list-group-item" ngNonBindable>add ref od child componet {{@ViewChild(CounterChildComponent, { static: true })
                 CounterChildComponent: CounterChildComponent;}}</li>
-            <li class="list-group-item" ngNonBindable> access method parent to child : {{ParentIncrease() {this.CounterChildComponent.childIncrease();} }}</li>
-            <li class="list-group-item" ngNonBindable>access method parent to child{{ ParentDecrease() {this.CounterChildComponent.ChildDecrease();}}}</li>
-          </ul>
+          <li class="list-group-item" ngNonBindable> access method parent to child :
+            {{ParentIncrease() {this.CounterChildComponent.childIncrease();} }}</li>
+          <li class="list-group-item" ngNonBindable>access method parent to
+            child{{ ParentDecrease() {this.CounterChildComponent.ChildDecrease();}}}</li>
+        </ul>
       </div>
       <div class="card-footer bg-info text-white">Footer</div>
     </div>
+
+
+    <div class="card mt-3">
+      <div class="card-header bg-info text-white">@viewchilden demo with Html Input control</div>
+      <div class="card-body">
+        <p>parent Component</p>
+        <app-theme1></app-theme1>
+      </div>
+      <div class="card-footer bg-info text-white"></div>
+    </div>
+
+
+    <div class="card mt-3">
+      <div class="card-header bg-info text-white">@viewchilden demo with Html Input control</div>
+      <div class="card-body">
+        <p>parent Component</p>
+        <app-parentcolor1></app-parentcolor1>
+      </div>
+      <div class="card-footer bg-info text-white"></div>
+    </div>
+
+
   </div>
 
   <div class="col-md-6">
     <div class="card ">
       <div class="card-header bg-info text-white">@viewChild Demo</div>
       <div class="card-body">
-<p>parent Component</p>
+        <p>parent Component</p>
         <button type="button" class="btn btn-success" (click)="ParentIncrease()"> Increase count 1</button>
         <button type="button" class="btn btn-danger ml-2" (click)="ParentDecrease()"> Decrease count -1</button>
 
-        <app-counter-child></app-counter-child>
+        <!-- <app-counter-child [name]="child1"></app-counter-child>
+        <app-counter-child [name]="child2"></app-counter-child>
+        <app-counter-child [name]="child3"></app-counter-child> -->
+<!-- 
+        <app-counter-child [name]="'child1'"></app-counter-child>
+        <app-counter-child [name]="'child2'"></app-counter-child>
+        <app-counter-child [name]="'child3'"></app-counter-child> -->
+
+        
+        <app-counter-child name="child1"></app-counter-child>
+        <app-counter-child name="child2"></app-counter-child>
+        <app-counter-child name="child3"></app-counter-child>
+        <app-counter-child name="child1"></app-counter-child>
+        <app-counter-child name="child2"></app-counter-child>
+        <app-counter-child name="child3"></app-counter-child>
 
       </div>
       <div class="card-footer bg-info text-white">Footer</div>
     </div>
+
+
+    <div class="card mt-3">
+      <div class="card-header bg-info text-white">@viewchild demo with Directive</div>
+      <div class="card-body">
+        <p>parent Component</p>
+        <app-parentcolor></app-parentcolor>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+
+
+
+    <div class="card mt-3">
+      <div class="card-header bg-info text-white">@viewchild demo with Html Input control</div>
+      <div class="card-body">
+        <p>parent Component</p>
+        <app-theme></app-theme>
+      </div>
+      <div class="card-footer bg-info text-white">if you want access other hook used static:true</div>
+    </div>
+
   </div>
+
+
+
 </div>

@@ -1,0 +1,32 @@
+
+
+
+<div class="card">
+    <div class="card-body">
+        <p appChangecolor> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime facilis est accusamus.</p>
+
+        <small>Note: p is hosted element and appChangecolor is host  </small>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <div class="card-body">
+        <form>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx"  (click)="changeColor('red')">
+              <label class="custom-control-label" for="customRadio" >Red</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx" (click)="changeColor('yellow')">
+              <label class="custom-control-label" for="customRadio2">Yellow</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio3" name="example" value="customEx" (click)="changeColor('green')">
+                <label class="custom-control-label" for="customRadio3">Green</label>
+              </div>
+          </form>
+    </div>
+  </div>
+  

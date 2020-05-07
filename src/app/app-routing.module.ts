@@ -36,6 +36,7 @@ import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.compo
 import { CurdComponent } from './UXtreandz/firebaseposmethod/curd/curd.component';
 import { TsbasicComponent } from './TypeScriptProg/tsbasic/tsbasic.component';
 import { Es6Component } from './TypeScriptProg/es6/es6.component';
+import { NgcontentComponent } from './ngcontent/ngcontent.component';
 
 const routes: Routes = [
 // when application start open this component or default route redireacting route
@@ -54,6 +55,8 @@ const routes: Routes = [
 { path: "lsstroge", component: SessionmenegmentComponent },
 { path: "cookies", component: CookiesmainComponent },
 { path: "input()Output()", component: ParentcomComponent },
+{ path: "ng-content", component: NgcontentComponent },
+{ path: "ng-content", component: NgcontentComponent },
 //mydemo  
 { path: "UxtreandzModule", component: TemplatedrivenformComponent },
 { path: "reactiveform", component: ReactiveformComponent },

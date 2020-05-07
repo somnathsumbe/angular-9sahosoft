@@ -1,0 +1,102 @@
+<div class="row mt-3">
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">ng-container</div>
+      <div class="card-body">
+        <ng-container>
+          simple example of ng-container
+        </ng-container>
+      </div>
+      <div class="card-footer bg-info text-white">ng-container not show on DOM</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Example 2</div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Name</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let family of familys; let i=index">
+              <tr *ngIf="i>=3">
+                <td>{{i+1}}</td>
+                <td>{{family.name}}</td>
+                <td>{{family.age}}</td>
+              </tr>
+              <tr>
+            </ng-container>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="card-footer bg-info text-white">We could not bind multipal Directive in one div</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Example 3</div>
+      <div class="card-body">
+
+        <ng-container *ngFor="let family of familys; let i=index">
+          <div>
+            {{family.name}}
+          </div>
+        </ng-container>
+      </div>
+      <div class="card-footer bg-info text-white">We could not bind multipal Directive in one div</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Error Example</div>
+      <div class="card-body">
+        <ng-container>
+          Danger! : This alert box indicates a dangerous or potentially negative action.
+        </ng-container>
+      </div>
+      <div class="card-footer bg-info text-white">ng-container not show on DOM</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Example 2</div>
+      <div class="card-body">
+
+        <ul>
+          <ng-container *ngFor="let family of familys; let i=index">
+            <li>{{family.age}}</li>
+          </ng-container>
+        </ul>
+      </div>
+      <div class="card-footer bg-info text-white">We could not bind multipal Directive in one div</div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Example 3</div>
+      <div class="card-body">
+
+        <ng-container *ngTemplateOutlet="template">
+        </ng-container>
+        <ng-template #template>
+          Hello Somnath sumbe
+        </ng-template>
+      </div>
+      <div class="card-footer bg-info text-white">We could not bind multipal Directive in one div</div>
+    </div>
+  </div>
+</div>
