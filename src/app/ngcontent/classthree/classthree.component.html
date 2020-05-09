@@ -1,0 +1,187 @@
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Building the Application</div>
+      <div class="card-body">
+
+        Angular apps run in development mode by default. When we switch to production mode it runs faster by
+        disabling development time checks such as the dual change detection cycles.
+        When production builds are enabled via --prod command line flag, the runtime production mode is
+        enabled as well.
+        As a result of the build process, a dist folder is created in the root of the application. the contents of this
+        dist folder can be uploaded to any http server.
+        <br>ng build project
+        <br>ng b project
+        <br>ng build project --prod
+        <br>ng b project --prod
+        By using ng build we saw that five files are generated for us.
+        You'll see the five files are:
+        <br>1 main.js
+        <br>2 polyfills.js
+        <br>3 styles.js
+        <br>4 runtime.js
+        <br>5 vendor.js
+
+
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white"> Running the Application</div>
+      <div class="card-body">
+
+
+        By using ng serve we saw that five files are generated for us.
+        You'll see the five files are:
+        <br>1. main.js: The bulk of our Angular application
+        <br>2. polyfills.js: The things needed to let Angular work in older browsers
+        <br>3. runtime.js: Contains all files (Component, module, services, pipes, etc.) convert into js and
+        transform into minimized version.
+        <br>4. styles.js: The styles!
+        <br>5. vendor.js: The Angular specific libraries
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-3">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Project Structure</div>
+      <div class="card-body">
+        <p>We know that lots of files and folders are generated whenever we create a new project in Angular.
+          When we open the Angular 7 project in the editor, we find three main folders e2e, node_modules, src,
+          and different configuration files.</p>
+
+        <p class="lead text-danger"> e2e</p>
+        <p>
+          e2e stands for end-to-end and this is the place where we can write the end to end test. The end to end
+          test is basically an automated test that simulates a real user where it contains testing scenarios (scripts)
+          which simulate user's behavior. We can simulate a user who visits a website, sign in, navigate to different
+          sites, fill the form and log out.
+          It is not present inside src because e2e tests are a separate app that just so happens to test your main
+          app. That’s why it has its own tsconfig.e2e.json.
+        </p>
+        <p class="lead text-danger"> node_modules</p>
+        <p>
+
+          When you run npm install, all 3rd party libraries are installed into this folder on which the application may
+          depend .Node.js create this folder and puts all third-party modules listed in package.json. These libraries
+          are get bundled to our application and are purely for development.
+          What is important to know is that you shouldn't include this folder during deploying your application to
+          production or committing to the git repository. While moving your project to a new location you should
+          skip this folder and run npm install in a new location.
+        </p>
+
+
+        <p class="lead text-success">src</p>
+
+
+        <p class="lead text-danger">app</p>
+        It contains all the modules and components of your application where every application has at least
+        one module and one component.
+
+        <p class="lead text-danger">Asset</p>
+
+        In this folder, you can put images and whatever else which needed to be copied extensively while
+        building your application. In other words, this is the place where you can store static assets of your
+        application for example images, icons etc.
+        <p class="lead text-danger">Environments</p>
+
+        It contains 2 files, each for different environments. You can use this file to store environment specific
+        configuration like database credentials or server addresses. These files areenvironment.prod.ts file for the
+        production
+        environment. Environment.ts file for the development environment.
+
+
+        <p class="lead text-danger">browserslist</p>
+        This file is currently used by autoprefixer to adjust CSS to support the specified browsers. For additional
+        information regarding the format and rule options go to
+        favicon.ico:
+        It is an icon file which displays on the browser.
+
+        <p class="lead text-danger">bindex.html:</p>
+        This is a simple HTML file. It contains HTML code with the head and body section. It is the starting point
+        of your application or you can say that this is where our angular app bootstraps. If you open it you will
+        find that there are no references to any stylesheet (CSS) nor JS files this is because all dependencies
+        are injected during the build process.
+
+        <p class="lead text-danger">bkarma.conf.js:</p>
+        It is used to store the setting of Karma i.e. test cases. It has a configuration for writing unit tests.karma is
+        the test runner and it uses jasmine as a framework. Both tester and framework are developed by the
+        angular team for writing unit tests.
+
+        <p class="lead text-danger">bmain.ts:</p>
+        This is the starting point for our app. If you ever coded in languages like Java or C you can compare it
+        with the main() method. If you have didn't just remember that our application starts to execute from this
+        point. This is where we are bootstrapping our first and only module i.e.AppModule.
+
+        <p class="lead text-danger">bpolyfills.ts:</p>
+        Polyfills files are used by the compiler to compile our Typescript to specific JavaScript methods which
+        can be parsed by different browsers.
+        It is basically imported script required for running Angular because angular framework uses the features
+        of javascript which are not available in the current version of javascript, supported by the most browser.
+        So, basically, it fills the gap to provide the features of JavaScript that are needed by Angular and the
+        feature supported by the latest browsers. It is mainly used for backward compatibility. Polyfills files can
+        be divided into two parts-
+        • Browser Polyfills these are applied before loading zone.js and are sorted by the browser.
+        • Application imports files imported after zone.js file, they should be loaded before your main file.
+
+        <p class="lead text-danger">bstyles.css:</p>
+        Global stylesheet file by default means it is where we can add global styles for our applications, including
+        our project. Note that each component has its own style component which applies styles only within the
+        scope of the given component.
+
+        <p class="lead text-danger">btest.ts:</p>
+        This is a configuration file of Karma which is used for setting the test environment. In this file, the unit
+        test
+        cases for testing the project will be handled.
+
+        <p class="lead text-danger">btsconfig.app.json:</p>
+        It is used during compilation and contains the configuration about how your application should compile.
+
+        <p class="lead text-danger">btsconfig.spec.json:</p>
+        tsconfig.spec.json is used for testing which runs in the node.js environment. It also helps in maintaining
+        the details for testing.
+        <p class="lead text-danger">beditorconfig:</p>
+        It is the config file for the editor which contains the setting of your editor. It has a parameter
+        like style, size of the character, line length..
+        <p class="lead text-danger">bGitignore:</p>
+        This file instructs git which files should be ignored when working with a git repository in order
+        to share the ignore rules with any other users that clone the repository.
+        <p class="lead text-danger">bangular.json:</p>
+        Since Angular CLI v6-RC2, the angular-cli.json file has been replaced by angular.json
+        It contains all the configuration of Angular 7 Project. It has the project name, root directory as
+        source folder (src) name which contains all the components, services, directives, pipes, the
+        starting point of our application (index.html file), the starting point of typescript file (main.ts),
+        style files (style.css). It is also used by @angular/clitool which is used to automate the angular
+        workflow by automating different operations related to the development and testing of angular
+
+        <p class="lead text-danger">bpackage-lock.json:</p>
+        package-lock.json is automatically generated for those operations where npm modifies either
+        the node_modules tree or package.json. In other words, the package.lock.json is generated
+        after an npm install.
+        It allows future devs and automated systems to download the same dependencies as the
+        project. It also allows you to go back to past versions of the dependency tree without actually
+        committing the node_modules folder.
+        package-lock.json records the same version of each installed package which allows to reinstall them. Future
+        installs will be capable of building an identical dependency tree
+        <p class="lead text-danger">bpackage.json:</p>
+        This file is mandatory for every npm project. It contains basic information regarding the project
+        (name, description, license etc), commands which can be used, dependencies - these are
+        packages required by the application to work correctly, and devDepndencies - again the list of
+        packages which are required for application however only during the development phase. i.e.
+        we need Angular CLI only during development to build a final package however for production
+        we don't use it anymore.
+        R
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+
+</div>

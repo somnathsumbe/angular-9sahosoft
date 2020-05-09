@@ -1,0 +1,38 @@
+<div class="row mt-3">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header bg-info text-white">ng-content</div>
+      <div class="card-body">
+
+        <div class="row">
+          <div class="col-md-6">
+            <app-child>
+              <h4 class="card-title text-capitalize">{{product1}}</h4>
+              <button type="button" class="btn btn-success">Know More laptop </button>
+            </app-child>
+          </div>
+          <div class="col-md-6">
+            <app-child>
+              <h4 class="card-title text-capitalize">Mobile</h4>
+              <button type="button" class="btn btn-success">Know More Mobile </button>
+            </app-child>
+          </div>
+          <div class="col-md-6">
+            <app-child>
+              <h4 class="card-title text-capitalize">Tv</h4>
+              <button type="button" class="btn btn-success">Know More Tv </button>
+            </app-child>
+          </div>
+          <div class="col-md-6">
+            <app-child>
+              <h4 class="card-title text-capitalize">Washing Machine</h4>
+              <button type="button" class="btn btn-success">Know More Washing </button>
+            </app-child>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer bg-danger text-white"> if you want same template in other component we used ng-content Now in this example we have send h1 element but when we send input box
+        its create problems so we have easy do with ng-content</div>
+    </div>
+  </div>
+</div>

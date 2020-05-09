@@ -37,13 +37,19 @@ import { CurdComponent } from './UXtreandz/firebaseposmethod/curd/curd.component
 import { TsbasicComponent } from './TypeScriptProg/tsbasic/tsbasic.component';
 import { Es6Component } from './TypeScriptProg/es6/es6.component';
 import { NgcontentComponent } from './ngcontent/ngcontent.component';
+import { ParentComponent } from './ngContent/parent/parent.component';
+import { ParentngContentComponent } from './ngcontent/parentng-content/parentng-content.component';
+import { ClassthreeComponent } from './ngcontent/classthree/classthree.component';
+import { ClasscontentComponent } from './classcontent/classcontent.component';
 
 const routes: Routes = [
 // when application start open this component or default route redireacting route
 //class demo
-{ path: "", redirectTo: "/firstclass", pathMatch: "full" },
+{ path: "", redirectTo: "/ccontent", pathMatch: "full" },
+{ path: "ccontent", component: ClasscontentComponent },
 { path: "firstclass", component: FirstclassComponent },
 { path: "secondclass", component: SecondclassComponent },
+{ path: "threeclass", component: ClassthreeComponent },
 { path: "forthclass", component: ForthclassComponent },
 { path: "directive", component: DirectiveComponent },
 { path: "maincomponent", component: MaincomponentComponent },
@@ -55,8 +61,9 @@ const routes: Routes = [
 { path: "lsstroge", component: SessionmenegmentComponent },
 { path: "cookies", component: CookiesmainComponent },
 { path: "input()Output()", component: ParentcomComponent },
-{ path: "ng-content", component: NgcontentComponent },
-{ path: "ng-content", component: NgcontentComponent },
+{ path: "ng-container", component: NgcontentComponent },
+{ path: "ng-content", component: ParentComponent },
+{ path: "ng-content1", component: ParentngContentComponent },
 //mydemo  
 { path: "UxtreandzModule", component: TemplatedrivenformComponent },
 { path: "reactiveform", component: ReactiveformComponent },
