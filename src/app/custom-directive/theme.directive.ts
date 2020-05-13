@@ -49,7 +49,12 @@ export class ThemeDirective {
     this.myback = "pink";
   }
 
-  @HostListener('click') myclick() {
-    alert();
+  @HostListener('mouseenter') myme() {
+   this.myback="orange";
   }
+
+  
+  @HostListener('mouseleave') myml() {
+    this.myback="red";
+   }
 }

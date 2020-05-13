@@ -9,7 +9,7 @@ export class ParentComponent implements OnInit {
 product1:string='laptop'
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
   }
 
 }
