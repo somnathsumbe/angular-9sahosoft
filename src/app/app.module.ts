@@ -67,6 +67,10 @@ import { ParentngContentComponent } from './ngcontent/parentng-content/parentng-
 import { ParentngChildComponent } from './ngcontent/parentng-child/parentng-child.component';
 import { ClassthreeComponent } from './ngcontent/classthree/classthree.component';
 import { ClasscontentComponent } from './classcontent/classcontent.component';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
+import { MyngifDirective } from './custom-directive/myngif.directive';
+import { ThemeDirective } from './custom-directive/theme.directive';
+
 
 @NgModule({
   declarations: [
@@ -128,6 +132,9 @@ import { ClasscontentComponent } from './classcontent/classcontent.component';
     ParentngChildComponent,
     ClassthreeComponent,
     ClasscontentComponent,
+    CustomDirectiveComponent,
+    MyngifDirective,
+    ThemeDirective
   ],
   imports: [
     BrowserModule,

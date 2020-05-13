@@ -1,0 +1,99 @@
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Custom Directives</div>
+      <div class="card-body">
+
+        Angular provides three types of directive: component directive, attribute directive and structural
+        directive.
+        <br>* Component directive is used to create HTML template.
+        <br>* Attribute directive changes the appearance and behavior of DOM element.
+        <br>* Structural directive changes the DOM layout by adding and removing DOM elements.
+        Angular provides built-in directives.
+        <br>* The built-in attribute directives are NgStyle, NgClass. These directives change the appearance and
+        behavior of HTML elements.
+        <br>*
+        <br>* The built-in structural directives are NgFor and NgIf etc. These directives can add and remove HTML
+        elements from the DOM layout.
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Example1 custome myngif</div>
+      <div class="card-body">
+        <p class="lead" *appMyngif="true">Hi how are you (true)</p>
+        <p class="lead" *appMyngif="false">Hi how are you (false)</p>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Example1 custome myngif</div>
+      <div class="card-body">
+
+
+        <div class="card  mb-3" *appMyngif="isshow">
+          <div class="card-body bg-warning">Basic card Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+            blanditiis
+            voluptate repellendus earum praesentium id similique qui veniam modi! Quod!</div>
+        </div>
+
+
+
+        <button type="button" class="btn btn-primary" (click)="myngifcheck()">Check appMyngif </button>
+
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Example1 custome myngif using ng-template</div>
+      <div class="card-body">
+        <ng-template [appMyngif]="isshow">
+          <div class="card  mb-3">
+            <div class="card-body bg-warning">Basic card Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              blanditiis
+              voluptate repellendus earum praesentium id similique qui veniam modi! Quod!</div>
+          </div>
+        </ng-template>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mt-3">
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Atrribute Theme Directive</div>
+      <div class="card-body">
+
+        <p appTheme>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi omnis vel cumque cupiditate aspernatur
+          dolorum ipsa odit minima quia? Voluptatum eos ex ad placeat sunt pariatur in laboriosam vitae dolorum.</p>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Atrribute Theme Directive</div>
+      <div class="card-body">
+
+        <p appTheme>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi omnis vel cumque cupiditate aspernatur
+          dolorum ipsa odit minima quia? Voluptatum eos ex ad placeat sunt pariatur in laboriosam vitae dolorum.</p>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+</div>

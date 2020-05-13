@@ -1,0 +1,97 @@
+<div class="row mt-3">
+  <div class="col-md-4">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Header</div>
+      <div class="card-body">
+
+
+
+
+        <div class="zindex shadow" *ngIf="isShow">
+          <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+            <div class="form-group">
+              <label for="">User Name </label>
+              <input type="text" class="form-control" #username="ngModel" ngModel name="username" id="username"
+                aria-describedby="helpId" placeholder="Enter username" required>
+              <!-- <small id="helpId" class="form-text text-danger" *ngIf="!username.valid && username.touched">Enter username</small> -->
+            </div>
+
+            <div class="form-group">
+              <label for="">Phone Number</label>
+              <input type="text" class="form-control" #phone="ngModel" ngModel name="phone" id="phone"
+                aria-describedby="helpId" placeholder="Enter phone Number" required>
+              <!-- <small id="helpId" class="form-text text-danger" *ngIf="!phone.valid && phone.touched">Enter Phone Number</small> -->
+            </div>
+
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" class="form-control" #email="ngModel" ngModel name="email" id="email"
+                aria-describedby="helpId" placeholder="Enter email" required>
+              <!-- <small id="helpId" class="form-text text-danger" *ngIf="!email.valid && email.touched">Enter valid Email</small> -->
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Time From</label>
+                  <input type="time" class="form-control" #timefrom="ngModel" ngModel name="timefrom" id="timefrom"
+                    aria-describedby="helpId" placeholder="Enter timefrom" required>
+                  <!-- <small id="helpId" class="form-text text-danger" *ngIf="!timefrom.valid && timefrom.touched">Enter valid timefrom</small> -->
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Time To</label>
+                  <input type="time" class="form-control" #timeto="ngModel" ngModel name="timeto" id="timeto"
+                    aria-describedby="helpId" placeholder="Enter timeto" required>
+                  <!-- <small id="helpId" class="form-text text-danger" *ngIf="!timeto.valid && timeto.touched">Enter valid timeto</small> -->
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success"  >Submit</button>
+            <button type="submit" class="btn btn-danger ml-2" (click)="closed()" >Closed</button>
+<!-- 
+            [disabled]="!myform.valid" -->
+          </form>
+        </div>
+      </div>
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Set Metting</div>
+      <div class="card-body">
+        <div class="month bg-primary">
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+              {{month}}<br>
+              <span style="font-size:18px">{{year}}</span>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+
+        <ul class="days">
+          <li *ngFor="let day of days ; let i=index" (click)="setMetting(i+1)" style="cursor: default;">{{day}}
+     {{data}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

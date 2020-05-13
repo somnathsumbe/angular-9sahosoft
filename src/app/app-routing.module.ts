@@ -41,6 +41,10 @@ import { ParentComponent } from './ngContent/parent/parent.component';
 import { ParentngContentComponent } from './ngcontent/parentng-content/parentng-content.component';
 import { ClassthreeComponent } from './ngcontent/classthree/classthree.component';
 import { ClasscontentComponent } from './classcontent/classcontent.component';
+import { Typescriptclass2Component } from './TypeScriptProg/typescriptclass2/typescriptclass2.component';
+import { SetmeetingComponent } from './MyApp/callscheduler/setmeeting/setmeeting.component';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
+
 
 const routes: Routes = [
 // when application start open this component or default route redireacting route
@@ -64,6 +68,7 @@ const routes: Routes = [
 { path: "ng-container", component: NgcontentComponent },
 { path: "ng-content", component: ParentComponent },
 { path: "ng-content1", component: ParentngContentComponent },
+{ path: "cdirective", component: CustomDirectiveComponent },
 //mydemo  
 { path: "UxtreandzModule", component: TemplatedrivenformComponent },
 { path: "reactiveform", component: ReactiveformComponent },
@@ -91,9 +96,11 @@ const routes: Routes = [
 //Myapp 
 { path: "camera", component: CameraappComponent },
 { path: "photosearch", component: PhotosearchComponent },
+{ path: "setmeeting", component: SetmeetingComponent },
 
 //TypeScript 
 { path: "TypeScriptbasic", component: TsbasicComponent },
+{ path: "tyclass2", component: Typescriptclass2Component },
 { path: "es6", component: Es6Component },
 
 
