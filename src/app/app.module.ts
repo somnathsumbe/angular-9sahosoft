@@ -70,6 +70,13 @@ import { ClasscontentComponent } from './classcontent/classcontent.component';
 import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 import { MyngifDirective } from './custom-directive/myngif.directive';
 import { ThemeDirective } from './custom-directive/theme.directive';
+import { MainComponent } from './childrouter/main/main.component';
+import { Childrouter1Component } from './childrouter/childrouter1/childrouter1.component';
+import { Childrouter2Component } from './childrouter/childrouter2/childrouter2.component';
+import { MainservicepageComponent } from './service/mainservicepage/mainservicepage.component';
+import { MyService } from './service/my.service';
+import { OtherService } from './service/other.service';
+import { Family } from './forthclass/family';
 
 
 @NgModule({
@@ -134,7 +141,11 @@ import { ThemeDirective } from './custom-directive/theme.directive';
     ClasscontentComponent,
     CustomDirectiveComponent,
     MyngifDirective,
-    ThemeDirective
+    ThemeDirective,
+    MainComponent,
+    Childrouter1Component,
+    Childrouter2Component,
+    MainservicepageComponent
   ],
   imports: [
     BrowserModule,
@@ -150,7 +161,7 @@ import { ThemeDirective } from './custom-directive/theme.directive';
 
   ],
 
-  providers: [Hello,BookinmemoryService,SubjectService,CookieService,UxproductsService],
+  providers: [Hello,BookinmemoryService,SubjectService,CookieService,UxproductsService,MyService,OtherService,Family],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

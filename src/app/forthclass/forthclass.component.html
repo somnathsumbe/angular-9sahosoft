@@ -39,4 +39,26 @@
     </div>
   </div>
 
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header bg-info"> Error Handaling</div>
+      <div class="card-body">
+
+        <!-- 
+<p>Name: {{familys && familys.name}}</p>
+<p>age :{{familys && familys.age}}</p>
+<p>city : {{familys && familys.city}}</p> -->
+
+
+
+        <p>Name: {{familys ? familys.name :'No Data Found'}}</p>
+        <p>age :{{familys ? familys.age :'No Data Found'}}</p>
+        <p>city : {{familys ? familys.city :'No Data Found'}}</p>
+
+      </div>
+      <!-- <div class="card-footer"> </div> -->
+    </div>
+  </div>
+
 </div>
