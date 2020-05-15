@@ -77,6 +77,15 @@ import { MainservicepageComponent } from './service/mainservicepage/mainservicep
 import { MyService } from './service/my.service';
 import { OtherService } from './service/other.service';
 import { Family } from './forthclass/family';
+import { Servicecompo1Component } from './service/servicecompo1/servicecompo1.component';
+import { Servicecompo2Component } from './service/servicecompo2/servicecompo2.component';
+import { NumlistService } from './service/numlist.service';
+import { Servicecompo3Component } from './service/servicecompo3/servicecompo3.component';
+import { Servicecompo4Component } from './service/servicecompo4/servicecompo4.component';
+import { Servicecompo5Component } from './service/servicecompo5/servicecompo5.component';
+import { Servicecompo6Component } from './service/servicecompo6/servicecompo6.component';
+import { Servicecompo7Component } from './service/servicecompo7/servicecompo7.component';
+import { Servicecompo8Component } from './service/servicecompo8/servicecompo8.component';
 
 
 @NgModule({
@@ -145,7 +154,15 @@ import { Family } from './forthclass/family';
     MainComponent,
     Childrouter1Component,
     Childrouter2Component,
-    MainservicepageComponent
+    MainservicepageComponent,
+    Servicecompo1Component,
+    Servicecompo2Component,
+    Servicecompo3Component,
+    Servicecompo4Component,
+    Servicecompo5Component,
+    Servicecompo6Component,
+    Servicecompo7Component,
+    Servicecompo8Component
   ],
   imports: [
     BrowserModule,
@@ -161,7 +178,7 @@ import { Family } from './forthclass/family';
 
   ],
 
-  providers: [Hello,BookinmemoryService,SubjectService,CookieService,UxproductsService,MyService,OtherService,Family],
+  providers: [NumlistService,Hello,BookinmemoryService,SubjectService,CookieService,UxproductsService,MyService,OtherService,Family],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

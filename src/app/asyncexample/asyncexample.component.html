@@ -70,10 +70,43 @@
         </thead>
         <tbody>
 
-          <tr *ngFor="let Allemp1 of allEmp  | async as tdata1 " >
-            {{Allemp1}}
-            <!-- <td>{{Allemp1.name}}</td>
-            <td>{{Allemp1.age}}</td> -->
+          <tr *ngFor="let allEmp of allEmps  | async as allEmps ; let i=index " >
+            <td>{{i+1}}</td>
+            <td>{{allEmp.name}}</td>
+            <td>{{allEmp.age}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<h1></h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <th>title</th>
+            <th>completed</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let geturldata of geturldatas  | async as geturldatas" >
+            <td>{{geturldata.userId}}</td>
+            <td>{{geturldata.id}}</td>
+            <td>{{geturldata.title}}</td>
+            <td>{{geturldata.completed}}</td>
           </tr>
         </tbody>
       </table>

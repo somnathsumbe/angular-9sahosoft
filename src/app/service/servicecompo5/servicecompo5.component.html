@@ -1,0 +1,8 @@
+<p>servicecompo5 works!</p>
+<input type="text"  #money >
+
+<button type="button" class="btn btn-xs btn-danger" (click)="depositeMoney(money.value)" >Deposite money</button>
+<ul *ngFor="let currantMonry of currantMonrys">
+    <li>{{currantMonry}}</li>
+</ul>
+

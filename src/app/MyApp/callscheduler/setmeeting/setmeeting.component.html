@@ -50,10 +50,9 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-success"  >Submit</button>
-            <button type="submit" class="btn btn-danger ml-2" (click)="closed()" >Closed</button>
-<!-- 
-            [disabled]="!myform.valid" -->
+            <button type="submit" class="btn btn-success"  [disabled]="!myform.valid">Submit</button>
+            <button type="submit" class="btn btn-danger ml-2" (click)="closed()">Closed</button>
+
           </form>
         </div>
       </div>
@@ -87,8 +86,8 @@
         </ul>
 
         <ul class="days">
-          <li *ngFor="let day of days ; let i=index" (click)="setMetting(i+1)" style="cursor: default;">{{day}}
-     {{data}}
+          <li class="datestyle" *ngFor="let day of days ; let i=index" (click)="setMetting(i)">
+            {{day}}<span *ngIf="datas[i]">{{"MeetingSet : "+datas[i]}} </span>
           </li>
         </ul>
       </div>

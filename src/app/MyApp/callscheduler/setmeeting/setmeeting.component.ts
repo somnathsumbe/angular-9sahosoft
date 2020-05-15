@@ -1,32 +1,29 @@
 import {
   Component,
-  OnInit,
-  ViewChild
-} from '@angular/core';
+  OnInit
+} from "@angular/core";
 import {
   NgForm
-} from '@angular/forms';
-
+} from "@angular/forms";
 
 @Component({
-  selector: 'app-setmeeting',
-  templateUrl: './setmeeting.component.html',
-  styleUrls: ['./setmeeting.component.css']
+  selector: "app-setmeeting",
+  templateUrl: "./setmeeting.component.html",
+  styleUrls: ["./setmeeting.component.css"],
 })
-
 export class SetmeetingComponent implements OnInit {
-  month: string = 'May';
+  month: string = "May";
   year: number = 2020;
-  setmeetingdata = [{}]
+  setmeetingdata = [{}];
   days = [];
   isShow = false;
   setmdata;
   index: number;
-  data: any;
+  datas = [];
+  cookidata = {};
+  getCurrentData: any;
 
-  constructor() {
-
-  }
+  constructor() {}
   ngOnInit(): void {
     this.CreateDate();
   }
@@ -35,24 +32,23 @@ export class SetmeetingComponent implements OnInit {
     for (var i = 1; i <= 30; i++) {
       this.days.push(i);
     }
-  }
+  };
 
-  setMetting(i) {
+  setMetting = (i) => {
     this.index = i;
     this.isShow = true;
-  }
-  onSubmit(myform: NgForm) {
+  };
+
+  onSubmit = (myform: NgForm) => {
     this.setmeetingdata = myform.value;
-    localStorage.setItem("obj", JSON.stringify(this.setmeetingdata));
-    debugger;
-    if (this.index) {
-      this.data = 'book';
+    if (this.index || this.index == 0) {
+      var obj: string = "index" + "" + this.index;
+      localStorage.setItem(obj, JSON.stringify(this.setmeetingdata));
+      var getdata = localStorage.getItem(obj);
+      this.getCurrentData = JSON.parse(getdata);
+      this.datas[this.index] = this.getCurrentData.timefrom + " " + this.getCurrentData.timeto;
     }
     this.isShow = false;
-  }
-
-
-  closed() {
-    this.isShow = false;
-  }
+  };
+  closed = () => (this.isShow = false);
 }

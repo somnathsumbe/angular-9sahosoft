@@ -9,6 +9,8 @@ body {font-family: Verdana, sans-serif;}
   text-align: center;
 }
 
+/* .datestyle {cursor: default;
+  height: 70px; border: 1px solid red;} */
 .month ul {
   margin: 0;
   padding: 0;

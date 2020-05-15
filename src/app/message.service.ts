@@ -5,10 +5,45 @@ import { resolve } from "dns";
   providedIn: "root"
 })
 export class MessageService {
+  url="https://jsonplaceholder.typicode.com/todos";
   constructor() {}
 
+
+  gettododata():Promise<object>{
+    var todo = [{
+      "userId": 1,
+      "id": 1,
+      "title": "delectus aut autem",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "quis ut nam facilis et officia qui",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "fugiat veniam minus",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "et porro tempora",
+      "completed": true
+    }
+     
+    ];
+    return new Promise(resolve => {
+      setTimeout(() => resolve(todo),3000);
+    });
+  }
+  
+
   getmessage(): Promise<string> {
-    debugger;
+
     let message = "Async pipe using service";
     return new Promise(resolve => {
       setTimeout(() => resolve(message), 3000);
@@ -16,7 +51,7 @@ export class MessageService {
   }
 
   getsubmessage(): Promise<string> {
-    debugger;
+
     let submessage =
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...";
     return new Promise(resolve => {

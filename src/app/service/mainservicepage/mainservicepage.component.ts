@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { MyService } from '../my.service';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  MyService
+} from '../my.service';
 
 @Component({
   selector: 'app-mainservicepage',
@@ -9,13 +14,13 @@ import { MyService } from '../my.service';
 })
 export class MainservicepageComponent implements OnInit {
 
-  myname:string;
-  otherservicename:string;
-  constructor( private _myservice:MyService) { }
+  myname: string;
+  otherservicename: string;
+  constructor(private _myservice: MyService) {}
 
   ngOnInit(): void {
-this.myname=this._myservice.getnamefromservice();
-this.otherservicename=this._myservice.getdatafromother();
+    this.myname = this._myservice.getnamefromservice();
+    this.otherservicename = this._myservice.getdatafromother();
   }
 
 }

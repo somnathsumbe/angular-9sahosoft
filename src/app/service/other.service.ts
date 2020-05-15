@@ -1,13 +1,14 @@
-// import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 // @Injectable({
 //   providedIn: 'root'
 // })
 
-// @Injectable()
+ @Injectable()
 export class OtherService {
 
-  constructor() { }
+  constructor( private _http:HttpClient) { }
 
   myotherservicetext(){
     return "sunita sumbe get text from OtherService "
