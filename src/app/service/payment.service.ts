@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 // })
 @Injectable()
 export class PaymentService {
-    list:number[]=[100];
+    list:number[]=[200];
       constructor() { }
     
       addnum(num:number){

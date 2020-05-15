@@ -6,7 +6,7 @@ import {
   providedIn: 'root'
 })
 export class BankService {
-  list: number[] = [500]
+  list: number[] = [300]
   constructor() {}
 
 currantMoney(){
