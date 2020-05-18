@@ -50,7 +50,7 @@ import { Childrouter2Component } from "./childrouter/childrouter2/childrouter2.c
 import { MainservicepageComponent } from './service/mainservicepage/mainservicepage.component';
 import { Impcommandpage1Component } from './impcommand/impcommandpage1/impcommandpage1.component';
 import { Shadular2Component } from './MyApp/callscheduler/shadular2/shadular2.component';
-import { CurdtemplateComponent } from './UXtreandz/curd/curdtemplate/curdtemplate.component';
+// import { CurdtemplateComponent } from './UXtreandz/curd/curdtemplate/curdtemplate.component';
 
 const routes: Routes = [
   // when application start open this component or default route redireacting route
@@ -111,7 +111,7 @@ const routes: Routes = [
   { path: "uxfirebase", component: FirebasecardComponent },
   { path: "uxcontent", component: ContentuseComponent },
   { path: "firebasecurdpostmethod", component: CurdComponent },
-  { path: "curdtemplate", component:   CurdtemplateComponent },
+  // { path: "curdtemplate", component:   CurdtemplateComponent },
 
   { path: "camera", component: CameraappComponent },
   { path: "photosearch", component: PhotosearchComponent },

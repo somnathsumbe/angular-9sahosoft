@@ -19,7 +19,7 @@ import { ContentuseComponent } from './contentuse/contentuse.component';
 import { CardComponent } from './contentuse/card/card.component';
 import { CurdComponent } from './firebaseposmethod/curd/curd.component';
 import { MytempformComponent } from './templateDriven/uxtemp-driven-form/mytempform/mytempform.component';
-import { CurdtemplateComponent } from './curd/curdtemplate/curdtemplate.component';
+// import { CurdtemplateComponent } from './curd/curdtemplate/curdtemplate.component';
 
 
 
@@ -42,7 +42,7 @@ import { CurdtemplateComponent } from './curd/curdtemplate/curdtemplate.componen
     CardComponent,
     CurdComponent,
     MytempformComponent,
-    CurdtemplateComponent,
+    // CurdtemplateComponent,
   ],
   imports: [
     CommonModule,
