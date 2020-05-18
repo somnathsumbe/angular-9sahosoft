@@ -86,6 +86,8 @@ import { Servicecompo5Component } from './service/servicecompo5/servicecompo5.co
 import { Servicecompo6Component } from './service/servicecompo6/servicecompo6.component';
 import { Servicecompo7Component } from './service/servicecompo7/servicecompo7.component';
 import { Servicecompo8Component } from './service/servicecompo8/servicecompo8.component';
+import { ImpcommandModule } from './impcommand/impcommand.module';
+
 
 
 @NgModule({
@@ -163,6 +165,7 @@ import { Servicecompo8Component } from './service/servicecompo8/servicecompo8.co
     Servicecompo6Component,
     Servicecompo7Component,
     Servicecompo8Component
+ 
   ],
   imports: [
     BrowserModule,
@@ -173,7 +176,8 @@ import { Servicecompo8Component } from './service/servicecompo8/servicecompo8.co
     MyappModule,
     MaxmillionModule,
     UxtreandzModule,
-    TstutorialsModule
+    TstutorialsModule,
+    ImpcommandModule
     
 
   ],

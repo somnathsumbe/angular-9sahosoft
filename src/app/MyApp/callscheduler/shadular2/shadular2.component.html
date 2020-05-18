@@ -1,0 +1,125 @@
+<div class="row mt-3">
+
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header bg-info text-white">Set Metting</div>
+      <div class="card-body">
+
+        <div class="zindex shadow" *ngIf="divisShow">
+          <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+            <div class="form-group">
+              <label for="">User Name </label>
+              <input type="text" class="form-control" #username="ngModel" ngModel name="username" id="username"
+                aria-describedby="helpId" placeholder="Enter username" required>
+              <!-- <small id="helpId" class="form-text text-danger" *ngIf="!username.valid && username.touched">Enter username</small> -->
+            </div>
+
+            <div class="form-group">
+              <label for="">Phone Number</label>
+              <input type="text" class="form-control" #phone="ngModel" ngModel name="phone" id="phone"
+                aria-describedby="helpId" placeholder="Enter phone Number" required>
+              <!-- <small id="helpId" class="form-text text-danger" *ngIf="!phone.valid && phone.touched">Enter Phone Number</small> -->
+            </div>
+
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" class="form-control" #email="ngModel" ngModel name="email" id="email"
+                aria-describedby="helpId" placeholder="Enter email" required>
+              <!-- <small id="helpId" class="form-text text-danger" *ngIf="!email.valid && email.touched">Enter valid Email</small> -->
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Time From</label>
+                  <input type="time" class="form-control" #timefrom="ngModel" min="9" ngModel name="timefrom"
+                    id="timefrom" aria-describedby="helpId" placeholder="Enter timefrom" minlength="9" maxlength="17" required>
+                  <div id="helpId" class="form-text text-danger" *ngIf="!timefrom.valid && (timefrom.touched ||timefrom.dirty )">
+                        <small *ngIf='timefrom.errors["required"]'>
+                           Please Fill the time
+                        </small>
+                        <small *ngIf='timefrom.errors["minlength"]'>
+                           you can select 09:00:00 AM to 06:00:00 PM
+                         </small>
+
+<!-- 
+                        <small>
+                            Please Fill the Field
+                         </small> -->
+                </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="">Time To</label>
+                  <input type="time" max="17" class="form-control" #timeto="ngModel" ngModel name="timeto" id="timeto"
+                    aria-describedby="helpId" placeholder="Enter timeto" required>
+                  <small id="helpId" class="form-text text-danger" *ngIf="!timeto.valid  && timeto.touched">Enter valid
+                    timeto</small>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success" [disabled]="!myform.valid">Submit</button>
+            <button type="submit" class="btn btn-danger ml-2" (click)="closed()">Closed</button>
+
+          </form>
+        </div>
+
+        <div class="month bg-primary">
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+              Month<br>
+              <span style="font-size:18px">2020</span>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+
+        <ul class="days">
+          <li class="datestyle" *ngFor="let day of dateArrays; let i=index" (click)="modelOpen(i)"
+            [ngClass]="{'font-weight-bolder text-success':i==currantDate, 'curser':i < currantDate}">
+            {{day.currDate}} 
+            <div *ngIf="day.meetingInfo && day.meetingInfo.username"> {{day.meetingInfo.timefrom}} {{day.meetingInfo.timeto}}</div>
+          </li>
+        </ul>        
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Modal body..
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

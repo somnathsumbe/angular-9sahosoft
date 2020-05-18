@@ -5,6 +5,7 @@ import { PhotosearchComponent } from './photosearch/photosearch.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { SetmeetingComponent } from './callscheduler/setmeeting/setmeeting.component';
+import { Shadular2Component } from './callscheduler/shadular2/shadular2.component';
 
 
 
@@ -12,7 +13,8 @@ import { SetmeetingComponent } from './callscheduler/setmeeting/setmeeting.compo
   declarations: [
     CameraappComponent,
     PhotosearchComponent,
-    SetmeetingComponent
+    SetmeetingComponent,
+    Shadular2Component
   ],
   imports: [
     CommonModule,

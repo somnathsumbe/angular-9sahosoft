@@ -18,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContentuseComponent } from './contentuse/contentuse.component';
 import { CardComponent } from './contentuse/card/card.component';
 import { CurdComponent } from './firebaseposmethod/curd/curd.component';
+import { MytempformComponent } from './templateDriven/uxtemp-driven-form/mytempform/mytempform.component';
+import { CurdtemplateComponent } from './curd/curdtemplate/curdtemplate.component';
 
 
 
@@ -39,6 +41,8 @@ import { CurdComponent } from './firebaseposmethod/curd/curd.component';
     ContentuseComponent,
     CardComponent,
     CurdComponent,
+    MytempformComponent,
+    CurdtemplateComponent,
   ],
   imports: [
     CommonModule,

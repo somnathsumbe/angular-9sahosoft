@@ -1,0 +1,56 @@
+<div class="col-md-6">
+    <form #mypersonaldata="ngForm" (ngSubmit)="onSubmit(mypersonaldata)">
+
+        <div class="form-group" >
+          <label for="">First Name</label>
+          <input type="text" class="form-control" ngModel name="fname">
+        </div>
+      
+        <div class="form-group">
+          <label for="">Last Name</label>
+          <input type="text" class="form-control" ngModel name="lname">
+        </div>
+      
+      
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control" ngModel name="email">
+        </div>
+      
+      
+        <div class="form-group">
+          <label for="">City</label>
+          <input type="text" class="form-control" ngModel name="city">
+        </div>
+      
+      
+      
+      
+        <button type="submit" class="btn btn-success">Submit</button>
+      
+      
+      </form>
+      
+</div>
+
+<div class="col-md-6">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let mydata of mydatas">
+            <td>{{mydata.fname}}</td>
+            <td>{{mydata.lname}}</td>
+            <td>{{mydata.email}}</td>
+            <td>{{mydata.city}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+</div>

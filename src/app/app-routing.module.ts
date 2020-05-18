@@ -48,6 +48,9 @@ import { MainComponent } from "./childrouter/main/main.component";
 import { Childrouter1Component } from "./childrouter/childrouter1/childrouter1.component";
 import { Childrouter2Component } from "./childrouter/childrouter2/childrouter2.component";
 import { MainservicepageComponent } from './service/mainservicepage/mainservicepage.component';
+import { Impcommandpage1Component } from './impcommand/impcommandpage1/impcommandpage1.component';
+import { Shadular2Component } from './MyApp/callscheduler/shadular2/shadular2.component';
+import { CurdtemplateComponent } from './UXtreandz/curd/curdtemplate/curdtemplate.component';
 
 const routes: Routes = [
   // when application start open this component or default route redireacting route
@@ -108,15 +111,22 @@ const routes: Routes = [
   { path: "uxfirebase", component: FirebasecardComponent },
   { path: "uxcontent", component: ContentuseComponent },
   { path: "firebasecurdpostmethod", component: CurdComponent },
+  { path: "curdtemplate", component:   CurdtemplateComponent },
 
   { path: "camera", component: CameraappComponent },
   { path: "photosearch", component: PhotosearchComponent },
   { path: "setmeeting", component: SetmeetingComponent },
+  { path: "setmeeting1", component: Shadular2Component },
 
   //TypeScript
   { path: "TypeScriptbasic", component: TsbasicComponent },
   { path: "tyclass2", component: Typescriptclass2Component },
   { path: "es6", component: Es6Component },
+
+
+
+  //Command
+  { path: "Command", component: Impcommandpage1Component },
 
   //wildcart route its always used last if page not in appl then this page will show
   { path: "**", component: PagenotfoundComponent },
