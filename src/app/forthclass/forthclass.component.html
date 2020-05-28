@@ -68,13 +68,41 @@
       <!-- <div class="card-footer"> </div> -->
     </div>
   </div>
-  
+
+
   <div class="col-md-6">
-      <div class="card ">
-          <div class="card-header bg-info text-white">Header</div>
-          <div class="card-body">Content</div>
-          <div class="card-footer bg-info text-white">Footer</div>
+    <div class="card ">
+      <div class="card-header bg-info text-white">ngSwitch</div>
+      <div class="card-body">
+        <input type="text" #name (keyup)="0">
+        <div [ngSwitch]="name.value">
+          <div *ngSwitchCase="'somnath'">somnath</div>
+          <div *ngSwitchCase="'sunita'">sunita</div>
+          <div *ngSwitchCase="'amol'">amol</div>
+          <div *ngSwitchDefault>No data Match</div>
         </div>
+
+
+<h2>call from function</h2>
+        <div [ngSwitch]="show()">
+          <div *ngSwitchCase="'somnath'">somnath</div>
+          <div *ngSwitchCase="'sunita'">sunita</div>
+          <div *ngSwitchCase="'amol'">amol</div>
+          <div *ngSwitchDefault>No data Match</div>
+        </div>
+
+
+        <h2>call from function</h2>
+        <div [ngSwitch]="show()">
+          <div *ngSwitchCase="'somnath'">somnath</div>
+          <div *ngSwitchCase="'sunita'">sunita</div>
+          <div *ngSwitchCase="'amol'">amol</div>
+          <div *ngSwitchDefault>No data Match</div>
+        </div>
+         
+      </div>
+      
+      <div class="card-footer bg-info text-white">Footer</div>
+    </div>
   </div>
 </div>
-

@@ -27,7 +27,7 @@ class sunita {
   viewProviders: [somnath, sunita]
 })
 export class ForthclassComponent implements OnInit {
-
+  name:string='somnath';
   constructor(private somnthobj: somnath, private sunitaobj: sunita, private Family: Family) {}
   familys
   // familys = {
@@ -37,6 +37,7 @@ export class ForthclassComponent implements OnInit {
   //   // city: "pune"
   // }
   ngOnInit(): void {
+    
 
     console.log(this.somnthobj.b);
     console.log(this.sunitaobj.myname());
@@ -44,4 +45,7 @@ export class ForthclassComponent implements OnInit {
     console.log(this.Family.add(20, 30));
   }
 
+  show(){
+    return "somnath"
+  }
 }
