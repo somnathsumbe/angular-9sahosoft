@@ -60,8 +60,6 @@ import { ParentcolorComponent } from './mydemo/viewchilddemo/parentcolor/parentc
 import { ThemeComponent } from './mydemo/viewchilddemo/theme/theme.component';
 import { Theme1Component } from './mydemo/viewchilddemo/theme1/theme1.component';
 import { Parentcolor1Component } from './mydemo/viewchilddemo/parentcolor1/parentcolor1.component';
-// import { ParentComponent } from './ngContent/parent/parent.component'; 
-// import { ChildComponent } from './ngContent/child/child.component';
 import { ParentngContentComponent } from './ngcontent/parentng-content/parentng-content.component';
 import { ParentngChildComponent } from './ngcontent/parentng-child/parentng-child.component';
 import { ClassthreeComponent } from './ngcontent/classthree/classthree.component';
@@ -140,8 +138,6 @@ import { ImpcommandModule } from './impcommand/impcommand.module';
     ThemeComponent,
     Theme1Component,
     Parentcolor1Component,
-    // ParentComponent,
-    // ChildComponent,
     ParentngContentComponent,
     ParentngChildComponent,
     ClassthreeComponent,
