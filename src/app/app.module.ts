@@ -54,7 +54,6 @@ import { MaxmillionModule } from './maxmillion/maxmillion.module';
 import { UxtreandzModule } from './UXtreandz/uxtreandz.module';
 import { ParentcomComponent } from './@Input()Output()/parentcom/parentcom.component';
 import { ChildcomComponent } from './@Input()Output()/childcom/childcom.component';
-import { TstutorialsModule } from './TypeScriptProg/tstutorials.module';
 import { NgcontentComponent } from './ngcontent/ngcontent.component';
 import { ChangecolorDirective } from './mydemo/viewchilddemo/changecolor.directive';
 import { ParentcolorComponent } from './mydemo/viewchilddemo/parentcolor/parentcolor.component';
@@ -114,9 +113,6 @@ import { ImpcommandModule } from './impcommand/impcommand.module';
     PagenotfoundComponent,
     StyleBindingComponent,
     PipesComponent,
-    
- 
-
     ViewchildmainpageComponent,
     CounterChildComponent,
     CounterParentComponent,
@@ -176,10 +172,7 @@ import { ImpcommandModule } from './impcommand/impcommand.module';
     MyappModule,
     MaxmillionModule,
     UxtreandzModule,
-    TstutorialsModule,
     ImpcommandModule
-    
-
   ],
 
   providers: [NumlistService,Hello,BookinmemoryService,SubjectService,CookieService,UxproductsService,MyService,OtherService,Family],

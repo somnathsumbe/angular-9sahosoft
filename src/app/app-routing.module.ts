@@ -34,14 +34,11 @@ import { UxtempDrivenFormComponent } from "./UXtreandz/templateDriven/uxtemp-dri
 import { ContentuseComponent } from "./UXtreandz/contentuse/contentuse.component";
 import { ParentcomComponent } from "./@Input()Output()/parentcom/parentcom.component";
 import { CurdComponent } from "./UXtreandz/firebaseposmethod/curd/curd.component";
-import { TsbasicComponent } from "./TypeScriptProg/tsbasic/tsbasic.component";
-import { Es6Component } from "./TypeScriptProg/es6/es6.component";
 import { NgcontentComponent } from "./ngcontent/ngcontent.component";
 import { ParentComponent } from "./ngContent/parent/parent.component";
 import { ParentngContentComponent } from "./ngcontent/parentng-content/parentng-content.component";
 import { ClassthreeComponent } from "./ngcontent/classthree/classthree.component";
 import { ClasscontentComponent } from "./classcontent/classcontent.component";
-import { Typescriptclass2Component } from "./TypeScriptProg/typescriptclass2/typescriptclass2.component";
 import { SetmeetingComponent } from "./MyApp/callscheduler/setmeeting/setmeeting.component";
 import { CustomDirectiveComponent } from "./custom-directive/custom-directive.component";
 import { MainComponent } from "./childrouter/main/main.component";
@@ -50,7 +47,6 @@ import { Childrouter2Component } from "./childrouter/childrouter2/childrouter2.c
 import { MainservicepageComponent } from './service/mainservicepage/mainservicepage.component';
 import { Impcommandpage1Component } from './impcommand/impcommandpage1/impcommandpage1.component';
 import { Shadular2Component } from './MyApp/callscheduler/shadular2/shadular2.component';
-// import { CurdtemplateComponent } from './UXtreandz/curd/curdtemplate/curdtemplate.component';
 
 const routes: Routes = [
   // when application start open this component or default route redireacting route
@@ -117,16 +113,6 @@ const routes: Routes = [
   { path: "photosearch", component: PhotosearchComponent },
   { path: "setmeeting", component: SetmeetingComponent },
   { path: "setmeeting1", component: Shadular2Component },
-
-  //TypeScript
-  { path: "TypeScriptbasic", component: TsbasicComponent },
-  { path: "tyclass2", component: Typescriptclass2Component },
-  { path: "es6", component: Es6Component },
-
-
-
-  //Command
-  { path: "Command", component: Impcommandpage1Component },
 
   //wildcart route its always used last if page not in appl then this page will show
   { path: "**", component: PagenotfoundComponent },
