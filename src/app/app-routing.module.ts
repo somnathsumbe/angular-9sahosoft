@@ -46,6 +46,7 @@ import { Childrouter2Component } from "./childrouter/childrouter2/childrouter2.c
 import { MainservicepageComponent } from './service/mainservicepage/mainservicepage.component';
 import { Impcommandpage1Component } from './impcommand/impcommandpage1/impcommandpage1.component';
 import { Shadular2Component } from './MyApp/callscheduler/shadular2/shadular2.component';
+import { ObservableComponent } from './httpobservable/observable/observable/observable.component';
 
 const routes: Routes = [
   // when application start open this component or default route redireacting route
@@ -69,6 +70,7 @@ const routes: Routes = [
   { path: "ng-container", component: NgcontentComponent },
   { path: "ng-content1", component: ParentngContentComponent },
   { path: "cdirective", component: CustomDirectiveComponent },
+  { path: "Observable", component: ObservableComponent },
 
   {
     path: "childrouter",

@@ -84,6 +84,10 @@ import { Servicecompo6Component } from './service/servicecompo6/servicecompo6.co
 import { Servicecompo7Component } from './service/servicecompo7/servicecompo7.component';
 import { Servicecompo8Component } from './service/servicecompo8/servicecompo8.component';
 import { ImpcommandModule } from './impcommand/impcommand.module';
+import { ObservableModule } from './httpobservable/observable/observable.module';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemHeroclass } from './httpobservable/observable/observable/interface/in-mem-heroclass';
+
 
 
 
@@ -168,7 +172,9 @@ import { ImpcommandModule } from './impcommand/impcommand.module';
     MyappModule,
     MaxmillionModule,
     UxtreandzModule,
-    ImpcommandModule
+    ImpcommandModule,
+    ObservableModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemHeroclass)
   ],
 
   providers: [NumlistService,Hello,BookinmemoryService,SubjectService,CookieService,UxproductsService,MyService,OtherService,Family],

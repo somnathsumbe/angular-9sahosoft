@@ -1,0 +1,52 @@
+<div class="row mt-3">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-info text-white">Observable</div>
+        <div class="card-body">
+          <table class="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let booksdata of booksdatas">
+                <td>{{booksdata.id}}</td>
+                <td>{{booksdata.name}}</td>
+                <td>{{booksdata.category}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div class="card-footer"></div> -->
+      </div>
+  
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-info text-white">Async using pipe</div>
+        <div class="card-body">
+          <table class="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let book of booksdatas$ | async ">
+                <td>{{book.id}}</td>
+                <td>{{book.name}}</td>
+                <td>{{book.category}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <!-- <div class="card-footer"> </div> -->
+      </div>
+    </div>
+  </div>
