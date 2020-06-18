@@ -35,7 +35,7 @@ import { ContentuseComponent } from "./UXtreandz/contentuse/contentuse.component
 import { ParentcomComponent } from "./@Input()Output()/parentcom/parentcom.component";
 import { CurdComponent } from "./UXtreandz/firebaseposmethod/curd/curd.component";
 import { NgcontentComponent } from "./ngcontent/ngcontent.component";
-import { ParentComponent } from "./ngContent/parent/parent.component";
+// import { ParentComponent } from "./ngContent/parent/parent.component";
 import { ParentngContentComponent } from "./ngcontent/parentng-content/parentng-content.component";
 import { ClassthreeComponent } from "./ngcontent/classthree/classthree.component";
 import { ClasscontentComponent } from "./classcontent/classcontent.component";
@@ -68,7 +68,7 @@ const routes: Routes = [
   { path: "cookies", component: CookiesmainComponent },
   { path: "input()Output()", component: ParentcomComponent },
   { path: "ng-container", component: NgcontentComponent },
-  { path: "ng-content", component: ParentComponent },
+  // { path: "ng-content", component: ParentComponent },
   { path: "ng-content1", component: ParentngContentComponent },
   { path: "cdirective", component: CustomDirectiveComponent },
 
